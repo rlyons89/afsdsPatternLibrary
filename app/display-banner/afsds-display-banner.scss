@@ -1,0 +1,39 @@
+// Banners
+
+.afsds-banner-warn-txt{ color: $afsds-warning-text}
+.afsds-banner-success-txt{ color: $afsds-success-text}
+.afsds-banner-error-txt{ color: $afsds-error-text;}
+.afsds-banner-info-txt{ color: $afsds-info-text;}
+
+.afsds-info-content-container{
+    background-color: $afsds-info-background;
+}
+
+.afsds-warning-content-container{
+    background-color: $afsds-warning-background;
+}
+
+.afsds-success-content-container{
+    background-color: $afsds-success-background;
+}
+
+.afsds-error-content-container{
+    background-color: $afsds-error-background;
+}
+
+.afsds-padding-10-30{
+    padding: 10px 30px;
+}
+
+.afsds-banner-icon-left{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.afsds-banner-padding-10-right{
+    padding-right: 10;
+}
+.afsds-banner-header-text{
+    font-size: 24px;
+    font-weight: bold;
+}

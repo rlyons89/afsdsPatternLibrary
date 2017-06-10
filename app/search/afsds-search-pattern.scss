@@ -1,0 +1,224 @@
+// #c9c9c9
+.autocomplete-custom-template li {
+  border-bottom: 1px solid #ccc;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  white-space: normal;
+}
+.afsds-category-type{
+    color: $afsds-primary-blue;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.afsds-item-title,.afsds-item-category{
+    display: block;
+    line-height: 2;
+}
+
+.afsds-search-button {
+    width: 55px;
+    height: 55px;
+    padding: 8px;
+    display: inline-block;
+    background-color: $afsds-white;
+    border: 2px solid $afsds-primary-gray;
+    border-left: none;
+    border-radius: 2px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    
+    i {
+        color: $afsds-primary-blue;
+        font-size: 24px;
+    }
+    
+    &:hover, &:focus {
+        background-color: $afsds-light-gray;
+        border: 2px solid $afsds-primary-blue;
+    }
+    
+}
+
+#afsds-resultsSearchContainer{
+    // padding: 250px 0 0 0;
+
+    .typeaheadDiv {
+        border: 2px solid #0c6291;
+        border-top: none;
+        height: 0;
+    }
+    .typeaheadCategory{
+        font-size: 13px;
+        padding: 10px;
+        background-color: $afsds-light-gray;
+        text-transform: uppercase;
+        cursor: default;
+        color: $afsds-black;
+        border-left: 2px solid $afsds-primary-gray;
+        border-right: 2px solid $afsds-primary-gray;
+        border-top: 1px solid $afsds-primary-gray;
+    }
+    
+    .typeaheadGroup:last-child {
+        border-bottom: 2px solid $afsds-primary-gray;
+    } 
+
+    .typeaheadPhrases{
+        font-size: 14px;
+        background-color: white;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #F2F2F2;
+            text-decoration: none;
+        }
+
+        p{
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid $afsds-primary-gray;
+            border-bottom: none;
+            border-left-width: 2px;
+            border-right-width: 2px;
+            transition: all .2s ease 0s;
+            
+            &:focus {
+                font-weight: bold;   
+                text-decoration: none;
+                border-left: 5px solid $afsds-primary-blue;
+            }
+
+            a {
+                font-weight: normal;
+                color: #0c6291;
+                padding: 10px;
+                display: block;
+            &:focus, &:hover{
+                font-weight: bold;   
+                text-decoration: none;
+                border-left: 5px solid $afsds-primary-blue;
+            }
+   
+        }
+    }
+} }
+
+.afsds-top-nav-search{
+
+}
+
+#afsds-searchInput{
+    border-radius: 2px;
+    height: 55px;
+    border-width: 2px;
+    padding-left: 10px;
+    outline: none;  
+    color: $afsds-dark-gray;
+    
+    &::placeholder {
+        color: $afsds-dark-gray;
+    }
+}
+
+.afsds-header {
+    
+    #afsds-searchInput {
+        height: 51px;
+        border-width: 2px;
+        border-radius: 2px;
+        padding-left: 10px;
+        outline: none; 
+        color: $afsds-white;
+    
+        &::placeholder {
+            color: $afsds-white;
+        }
+        
+        
+        @media(max-width: 599px){
+            height: 36px;   
+        }
+        
+        &:hover, &:focus {
+            border: 2px solid $afsds-white; 
+            border-right: none;
+        }
+    }
+    
+    .afsds-top-nav-search {
+        @media(max-width: 599px){
+            height: 36px;   
+        }
+    }
+    
+    .afsds-search-button {
+        width: 51px;
+        height: 51px;
+        padding: 0;
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        border-left: none;
+        border-radius: 2px;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        
+        @media(max-width: 599px){
+            height: 36px; 
+            width: 36px;
+        }
+
+        i {
+            color: $afsds-white;
+            font-size: 24px;
+        }
+
+        &:hover, &:focus {
+            background-color: rgba($afsds-light-gray,.5);
+            border: 2px solid $afsds-white;
+        }
+
+    }
+}
+
+.hidden508{
+    position: absolute;
+    top: -1500px;
+    left: -1500px;
+}
+
+#afsds-searchBtn {
+    .fa {
+        color: #0c6291;
+        font-size: 20px;
+    }
+
+    &:hover{
+        background: inherit;
+        background-color: #e4e4e4;
+        color: #FFFFFF;
+    }
+
+}
+
+.afsds-accessibility-element {
+    height: 1px;
+    width: 1px;
+    display: block;
+    position: absolute;
+    left: -99999px;
+    top: -99999px;
+}
+
+results-text-search-component {
+    padding: 0;
+    width: 100%;
+}
+

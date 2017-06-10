@@ -1,6 +1,6 @@
 (function(){
     'use strict';
-    angular.module("USCBPttrn")
+    angular.module("afsdsPttrn")
         .component("colorHelper",{
             bindings: {
                 colorlist:'<'

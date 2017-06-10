@@ -1,0 +1,84 @@
+<display-wrapper title="Forms and Input">
+  <afsds-description>
+      
+  </afsds-description>
+    <afsds-code>
+    <h4>Code</h4> 
+         <section class="afsds-tabs-wrapper" layout="row">
+            <md-tabs class="afsds-tabs" flex="100">
+                <md-tab class="afsds-tab" label="HTML">
+                    <xmp>
+                        <p>Drop down menu</p>
+                        <md-input-container class="md-block" flex-gt-sm>
+                            <label>State</label>
+                            <md-select ng-model="user.state" class="afsds-primary-select">
+                                <md-option ng-repeat="state in vm.states" value="{{state.abbrev}}">
+                                {{state.abbrev}}
+                                </md-option>
+                            </md-select>
+                        </md-input-container>
+
+                        <p>Text input</p>
+                        <md-input-container class="md-block">
+                            <label>Address</label>
+                            <input>
+                        </md-input-container>
+
+                        <p>Switch</p>
+                        <md-switch ng-model="data.cb1" aria-label="Show Margin of Error" md-invert>
+                        Show Margin of Error
+                        </md-switch>
+                        
+                        <p>Checkbox</p>
+                        <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="afsds-primary-checkbox">
+                        Checkbox (afsds-primary-blue): No Ink
+                        </md-checkbox>
+
+                        <md-checkbox aria-label="Checkbox No Ink" class="afsds-primary-checkbox">
+                        Checkbox (afsds-primary-blue)
+                        </md-checkbox>
+
+                    </xmp>
+                  </md-tab>
+                  <md-tab label="JS"></md-tab>
+
+            </md-tabs>
+        </section>
+  </afsds-code>
+
+  <afsds-demo>
+    <h4>Example</h4>
+      
+        <p>Drop down menu</p>
+        <md-input-container class="md-block" flex-gt-sm>
+            <label>State</label>
+            <md-select ng-model="user.state" class="afsds-primary-select">
+                <md-option ng-repeat="state in vm.states" value="{{state.abbrev}}">
+                {{state.abbrev}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+
+        <p>Text input</p>
+        <md-input-container class="md-block">
+            <label>Address</label>
+            <input>
+        </md-input-container>
+
+        <p>Switch</p>
+        <md-switch ng-model="data.cb1" aria-label="Show Margin of Error" md-invert>
+        Show Margin of Error
+        </md-switch>
+      
+        <p>Checkbox</p>
+        <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="afsds-primary-checkbox">
+        Checkbox (afsds-primary-blue): No Ink
+        </md-checkbox>
+
+        <md-checkbox aria-label="Checkbox No Ink" class="afsds-primary-checkbox">
+        Checkbox (afsds-primary-blue)
+        </md-checkbox>
+
+
+  </afsds-demo>
+</display-wrapper>

@@ -1,0 +1,68 @@
+<display-wrapper title="Cards">
+    <afsds-description>
+        
+    </afsds-description>
+    <afsds-code>
+        <h4>Code</h4>
+        <md-tabs class="afsds-tabs">
+            <md-tab label="HTML">
+                <xmp>
+                    Horizontal Scroll
+                    <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
+                        <div class="afsds-card-container" md-virtual-repeat="item in vm.items" flex>
+                            <div>
+                                <img src="app/images/michigan.png" alt="">
+                            </div>
+                            <div>
+                                <p> {{vm.randomText}}</p>
+                            </div>
+                        </div>
+                    </md-virtual-repeat-container>
+
+                    Vertical Scroll
+
+                </xmp>
+            </md-tab>
+            <md-tab label="JS">
+                <xmp>
+
+                </xmp>
+            </md-tab>
+        </md-tabs>
+    </afsds-code>
+    <afsds-demo>
+        <h4>Horizontal Scroll Card</h4>
+        <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
+
+            <div class="afsds-card" md-virtual-repeat="item in vm.items" flex>
+                <div class="afsds-card-content">
+                    <img src="app/images/michigan.png" alt="">
+                </div>
+                <div class="afsds-card-toolbar">
+                    <p> {{vm.randomText}}</p>
+                </div>
+            </div>
+        </md-virtual-repeat-container>
+
+        <h4>Vertical Scroll</h4>
+        <div >
+            <md-virtual-repeat-container class="afsds-virtual-repeat-container">
+                <section class="" layout="row" md-virtual-repeat="item in vm.tables" flex>
+                    <div hide-xs flex="80" layout="column" layout-align="center start">
+                        <h4 class="afsds-table-h4">{{item.concept}}</h4>
+                        <p class="afsds-table-source-label">Source: <span class="afsds-table-id-text">Table {{item.tableID}}</span> </p>
+                    </div>
+                    <md-button aria-label="Go To Table Button" class="afsds-table-action-container" flex-xs="100" flex="20" layout="row" layout-align="center center" >
+                          <div hide-gt-xs flex-xs="75" flex="80" layout="column" layout-align="center start" aria-hidden="true">
+                            <h4 class="afsds-table-h4">{{item.concept}}</h4>
+                            <p class="afsds-table-source-label">Source: <span class="afsds-table-id-text">Table {{item.tableID}}</span> </p>
+                        </div>     
+
+                        <md-button class="afsds-primary-button" aria-label="Go To full view" hide-xs> View Full Map </md-button> 
+                        <md-button aria-hidden="true" flex="20" class="afsds-primary-link" ng-href="{{googleUrl}}" target="_blank" hide-gt-xs aria-label="Go to full view"><i class="fa fa-chevron-right" aria-hidden="true"></i></md-button>    
+                    </md-button>
+                </section>
+            </md-virtual-repeat-container>
+        </div>
+    </afsds-demo>
+</display-wrapper>

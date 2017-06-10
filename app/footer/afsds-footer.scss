@@ -1,0 +1,33 @@
+.afsds-footer {
+    background-color: $afsds-primary-blue;
+    text-align: center;
+    color: $afsds-white;
+    min-height: 70px;
+
+    .afsds-secondary-link-footer {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        
+        @media(max-width: 960px){
+            min-height: 16px;
+            line-height: 16px;
+            font-size: 13px;
+            display: inline-block;
+            margin: 6px 0px;
+        }
+    }
+}
+
+.afsds-footer-sidenav {
+    
+    .afsds-secondary-link-footer {
+        font-size: 13px;
+        line-height: 20px;
+        min-height: 20px;
+        
+        @media(max-width: 960px){
+            
+        }
+    }
+}

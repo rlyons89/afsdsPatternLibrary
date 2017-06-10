@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module("USCBPttrn")
+    angular.module("afsdsPttrn")
         .component("displayWrapper", {
             bindings: {
                 title:'@'
@@ -10,9 +10,9 @@
             templateUrl: './app/display-wrapper/display-wrapper.component.html',
             controllerAs: "vm",
             transclude: {
-                code: 'uscbCode',
-                description: 'uscbDescription',
-                demo: 'uscbDemo'
+                code: 'afsdsCode',
+                description: 'afsdsDescription',
+                demo: 'afsdsDemo'
             }
         });
 

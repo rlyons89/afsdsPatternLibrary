@@ -1,0 +1,11 @@
+.afsds-icon-svg-blue {
+    fill: $afsds-primary-blue;
+}
+
+.afsds-icons-platform {
+    height: 100px;
+    
+    @media(max-width: 599px){
+        height: 50px;
+    }
+}

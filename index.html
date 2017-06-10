@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="USCBPttrn">
+<html lang="en" ng-app="afsdsPttrn">
     <head>
         <title></title>
         <meta charset="UTF-8">
@@ -7,73 +7,54 @@
          <!--FONTS-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--STYLESHEETS-->
         <link rel="stylesheet" href="./node_modules/angular-material/angular-material.css">
         <link href="./css/styles.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-       
     </head>
     <body>
-
+        
         <ui-view> </ui-view>
-
+        
         <!--Libraries-->
         <script src="./node_modules/angular/angular.js"></script>
         <script src="./node_modules/angular-material/angular-material.js"></script>
         <script src="./node_modules/angular-animate/angular-animate.js"></script>
         <script src="./node_modules/angular-aria/angular-aria.js"></script>
         <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="./app/example-pages/landing-page/angular-scroll.min.js"></script>
 
         <!--Js dependency -->
         <script src="./app.js"></script>
         <script src="./app/main/main.component.html"></script>
         <script src="./app/main/main.component.js"></script>
-        <script src="./app/home/uscb-home.component.js"></script>
-        <script src="./app/home/uscb-home.html"></script>
+        <script src="./app/home/afsds-home.component.js"></script>
+        <script src="./app/home/afsds-home.html"></script>
         <script src="./app/example-pages/landing-page/landing-page.component.html"></script>
         <script src="./app/example-pages/landing-page/landing-page.component.js"></script>
-        <script src="./app/example-pages/table-results/table-results.component.html"></script>
-        <script src="./app/example-pages/table-results/table-results.component.js"></script>
-        <script src="./app/example-pages/map-results/map-results.component.html"></script>
-        <script src="./app/example-pages/map-results/map-results.component.js"></script>
-        <script src="./app/buttons/usb.button.component.js"></script>
+        <script src="./app/buttons/afsds-button.component.js"></script>
         <script src="./app/display-wrapper/display-wrapper.component.js"></script>
         <script src="./app/services/routes.service.js"></script>
-        <script src="./app/colors/uscb.color.ctrl.js"></script>
+        <script src="./app/colors/afsds.color.ctrl.js"></script>
         <script src="./app/colors/color-helper-component/color.helper.component.js"></script>
-        <script src="./app/GridList/uscb-gridlist.ctrl.js"></script>
-        <script src="./app/checkbox/uscb-checkbox.ctrl.js"></script>
-        <script src="./app/icons/uscb-icons.component.js"></script>
-        <script src="./app/layout/uscb-layout.component.js"></script>
-        <script src="./app/forms-input/uscb-forms-input.ctrl.js"></script>
-        <script src="./app/accordion/uscb-accoridion.ctrl.js"></script>
-        <script src="./app/header/uscb-header.component.js"></script>
-        <script src="./app/footer/uscb-footer.component.js"></script>
-        <script src="./app/tooltips/uscb-tooltips.component.js"></script>
-        <script src="./app/search/uscb-search-pattern.ctrl.js"></script>
-        <script src="./app/chips/uscb-chips.component.js"></script>
-        <script src="./app/toasts/uscb-toasts.component.js"></script>
-        <script src="./app/customSearch/uscb-custom-search.js"></script>
-        <script src="./app/customSearch/uscb-auto-complete/uscb-auto-complete.comp.js"></script>
-        <script src="./app/chips/uscb-chips.component.js"></script>
-        <script src="./app/Toasts/uscb-toasts.component.js"></script>
-        <script src="./app/webpages/webpages.js"></script>
-        <script src="./app/list-items/uscb-list-items.component.js"></script>
-        <script src="./app/list-items/uscb-list-item/uscb-list-item.component.js"></script>
-        <script src="./app/tabs/uscb-tabs.component.js"></script>
-        <script src="./app/progress/uscb-progress.component.js"></script>
-        <script src="./app/pagination/uscb-pagination.component.js"></script>
-        <script src="./app/typography/uscb-typography.component.js"></script>
-        <script src="./app/returnHeightDirective/returnHeight.dir.js"></script>
-        <script src="./app/Accordion-click/accordionClick.dir.js"> </script>
-        <script src="./app/display-banner/uscb-display-banner.js"></script>
-        <script src="./app/quick-stats/quick-stats.controller.js"></script>
-        <script src="./app/related-search/related-search.controller.js"></script>
-        <script src="./app/learn-more/uscb-learn-more-controller.js"></script>
-        <script src="./app/cards/uscb-cards.controller.js"></script>
-        <script src="./app/example-pages/all-results/all-results.component.js"></script>
-        <script src="./app/disambiguation-section/disambiguation.comp.js"></script>
-        <script src="./app/example-pages/geo-profile/geo-profile.comp.js"></script>
-        <script src="./app/example-pages/landing-page/angular-scroll.min.js"></script>
+        <script src="./app/GridList/afsds-gridlist.ctrl.js"></script>
+        <script src="./app/icons/afsds-icons.component.js"></script>
+        <script src="./app/layout/afsds-layout.component.js"></script>
+        <script src="./app/forms-input/afsds-forms-input.ctrl.js"></script>
+        <script src="./app/header/afsds-header.component.js"></script>
+        <script src="./app/footer/afsds-footer.component.js"></script>
+        <script src="./app/tooltips/afsds-tooltips.component.js"></script>
+        <script src="./app/search/afsds-search-pattern.ctrl.js"></script>
+        <script src="./app/chips/afsds-chips.component.js"></script>
+        <script src="./app/toasts/afsds-toasts.component.js"></script>
+        <script src="./app/chips/afsds-chips.component.js"></script>
+        <script src="./app/Toasts/afsds-toasts.component.js"></script>
+        <script src="./app/tabs/afsds-tabs.component.js"></script>
+        <script src="./app/progress/afsds-progress.component.js"></script>
+        <script src="./app/pagination/afsds-pagination.component.js"></script>
+        <script src="./app/typography/afsds-typography.component.js"></script>
+        <script src="./app/display-banner/afsds-display-banner.js"></script>
+        <script src="./app/cards/afsds-cards.controller.js"></script>
+        
     </body>
 </html

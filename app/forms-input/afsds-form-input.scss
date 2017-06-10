@@ -1,0 +1,130 @@
+md-select.afsds-primary-select:focus:not([disabled]) .md-select-value {
+    border-radius: 2px;
+    border-width: 0;
+}
+
+md-select {
+    border: 2px solid $afsds-primary-gray;
+    border-radius: 2px;
+    
+    .md-select-value { 
+        border-width: 0;   
+    }
+}
+
+md-input-container {
+    margin: 0;
+    
+    .md-input {
+        border: 2px solid $afsds-primary-gray !important;
+        border-radius: 2px;
+        
+        &.afsds-input-large {
+            height: 50px;
+            font-size: 18px;
+            padding-left: 5px;
+            padding-right: 40px;
+            color: $afsds-primary-blue;
+            
+            &::placeholder {
+                color: $afsds-dark-gray;;
+            }
+        }
+        
+        &.afsds-input-header {
+            color: $afsds-white;
+            border: none !important;
+            
+            @media(max-width: 959px){
+                height: 32px;
+                
+                .fa {
+                    top: 8px;   
+                }
+            }
+            
+            &::placeholder {
+                color: $afsds-white;
+            }
+        }
+    }
+    
+    .fa {
+        position: absolute;
+        right: 14px;
+        font-size: 26px;
+        top: 14px;
+        color: $afsds-primary-blue;
+    }
+    
+}
+
+md-input-container.md-input-focused:not(.md-input-invalid) .md-input {
+    border-color: $afsds-primary-gray;
+}
+md-input-container.md-input-focused:not(.md-input-invalid) label {
+    color: $afsds-dark-gray;
+}
+
+md-input-container label {
+    
+}
+
+md-backdrop {
+    opacity: 0;
+}
+
+.afsds-form-control{
+    border: 0.5px solid #ccc;
+}
+
+.afsds-searchBtnHolder{
+    border: 2px solid #ccc;
+    width: auto;
+    border-left: none;
+    left: -1px;
+    position: relative;
+    border-radius: 2px;
+}
+
+md-switch {
+    
+    margin: 0;
+    
+    &.md-checked {
+        
+        .md-thumb {
+            background-color: $afsds-white;
+            border:1px solid $afsds-primary-blue;
+        } 
+        
+        &.md-focused .md-thumb:before {
+            background-color: rgba($afsds-primary-blue, 0.26);
+        } 
+        
+        .md-bar {
+            background-color: $afsds-primary-blue;
+        }
+        
+        .md-ink-ripple {
+            color: $afsds-primary-blue;
+        } 
+    }
+    
+    .md-thumb {
+        background-color: $afsds-white;
+        border:1px solid $afsds-dark-gray;
+    }   
+    
+    .md-bar {
+        background-color: $afsds-dark-gray;
+    } 
+    
+    .md-ink-ripple {
+        color: $afsds-dark-gray;
+    } 
+}
+
+md-checkbox.afsds-primary-checkbox.md-checked:not([disabled]) .md-icon{
+    background-color: $afsds-primary-blue;
+}

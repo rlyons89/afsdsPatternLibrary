@@ -1,0 +1,13 @@
+.md-tooltip {
+    &.afsds-tooltip {
+        width: 300px;
+        background-color: $afsds-light-gray;
+        color: $afsds-black;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        font-size: 14px;
+        overflow: visible;
+        white-space: normal;
+        height: auto;
+        opacity: 1;
+    }
+}

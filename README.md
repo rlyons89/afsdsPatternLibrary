@@ -1,6 +1,6 @@
 # PatternLibrary
 
-CEDSCI Pattern Library Build using angular 1
+AFSDS Pattern Library Build using angular 1
 
 ## Code scaffolding / Run Project
 

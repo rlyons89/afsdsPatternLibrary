@@ -1,0 +1,63 @@
+.afsds-tabs-wrapper {
+     background-color: $afsds-light-gray;
+    .afsds-tabs {
+        
+        .md-tab {
+            font-size: 18px;
+            color: $afsds-dark-gray;
+            text-overflow: inherit;
+            text-transform: capitalize;
+            padding: 20px 12px;
+            padding-bottom: 0;
+        }
+        
+        .md-tab.md-active {
+            color: $afsds-primary-blue;
+            font-weight: bold;
+        }
+        
+        md-tabs-wrapper {
+           
+            height: 60px;
+           
+        }
+        
+        md-tab-content {
+            top: 15px;
+        }
+        
+        md-ink-bar {
+            color: $afsds-primary-blue;
+            background: $afsds-primary-blue;
+            height: 4px;
+            border-radius: 2px;
+            margin: 0px 2px;
+            bottom: 0px;
+        }
+        
+        md-tabs-canvas {
+            margin: 0;
+            overflow: visible;
+        }
+        
+        md-pagination-wrapper {
+            height: 60px;
+        }
+        
+        md-prev-button {
+            display: none;   
+        }
+        
+        md-next-button {
+            display: none;   
+        }
+ 
+    }
+    
+    .afsds-tabs-sidenav {
+         
+        md-tabs-wrapper {
+            padding: 0;    
+        }
+    }
+}

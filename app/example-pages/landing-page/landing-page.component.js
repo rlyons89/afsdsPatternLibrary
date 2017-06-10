@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module("USCBPttrn")
+    angular.module("afsdsPttrn")
         .controller("landingCtrl", ["$timeout","RouteService", "$location", "$anchorScroll", "$mdSidenav", "$scope", function ($timeout,RouteService, $location, $anchorScroll, $mdSidenav, $scope) {
             var vm = this;
             

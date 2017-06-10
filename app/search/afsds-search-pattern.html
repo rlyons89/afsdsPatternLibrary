@@ -1,0 +1,50 @@
+<display-wrapper title="Search">
+    <afsds-description>
+       
+    </afsds-description>
+    <afsds-code>
+        <h4>Code</h4>
+        <md-tabs class="afsds-tabs">
+            <md-tab label="HTML">
+                <xmp>
+                    <md-autocomplete ng-disabled="vm.isDisabled" md-no-cache="vm.noCache" md-selected-item="vm.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+                        md-search-text="vm.searchText" md-selected-item-change="vm.selectedItemChange(item)" md-items="item in vm.AllArrays | lowercase | filter:vm.searchText"
+                        md-item-text="item.concept" md-min-length="2" placeholder="Enter search Text" md-menu-class="autocomplete-custom-template">
+                        <span>Topics</span>
+                        <md-item-template>
+                            <span class="afsds-item-title" md-highlight-text="vm.searchText" md-hight-flags="~i">{{item.concept}}</span>
+                            <span class="afsds-item-category"><span class="afsds-category-type">{{item.category}}</span></span>
+                        </md-item-template>
+                        <md-not-found>
+                            <span>No matches found</span>
+                        </md-not-found>
+                        </md-autocomplete>
+                </xmp>
+            </md-tab>
+            <md-tab label="JS">
+                <xmp>
+                    (function () { 'use strict'; angular.module("afsdsPttrn") .controller('SearchCtrl', ["RouteService", searchCtrl]); function
+                    searchCtrl(RouteService) { var self = this; self.selectedItem; self.noCache = false; self.searchText;
+                    self.AllArrays = RouteService.AllData; RouteService.getAllItems().then(function () { self.AllArrays =
+                    RouteService.AllData; console.log(self.AllArrays); }); } // end controller })();
+                </xmp>
+            </md-tab>
+
+        </md-tabs>
+    </afsds-code>
+    <afsds-demo>
+        <h4>Example</h4>
+        <md-autocomplete ng-disabled="vm.isDisabled" md-no-cache="vm.noCache" md-selected-item="vm.selectedItem" md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
+            md-search-text="vm.searchText" md-selected-item-change="vm.selectedItemChange(item)" md-items="item in vm.AllArrays | lowercase | filter:vm.searchText"
+            md-item-text="item.concept" md-min-length="2" placeholder="Enter search Text" md-menu-class="autocomplete-custom-template">
+            <span>Topics</span>
+            <md-item-template>
+                <span class="afsds-item-title" md-highlight-text="vm.searchText" md-hight-flags="~i">{{item.concept}}</span>
+                <span class="afsds-item-category"><span class="afsds-category-type">{{item.category}}</span></span>
+            </md-item-template>
+            <md-not-found>
+                <span>No matches found</span>
+            </md-not-found>
+            </md-autocomplete>
+    </afsds-demo>
+</display-wrapper>

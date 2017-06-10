@@ -1,0 +1,105 @@
+<display-wrapper title="Layout">
+  <afsds-description>
+       
+    </afsds-description>
+    <afsds-code>
+    <h4>Code</h4> 
+        <section class="afsds-tabs-wrapper" layout="row">
+            <md-tabs class="afsds-tabs" flex="100">
+                <md-tab class="afsds-tab" label="HTML">
+                <md-content>
+                  <xmp>
+                      <h3>Full-Width Content</h3>
+                      <div layout="row" class="afsds-content-wrapper" id="bottom-sheet-wrapper-1">
+                        <div layout="column" flex-gt-xs="90" flex-offset-gt-xs="5" flex-xs="100">
+                            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 1
+                                <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet1()">Open Bottom Sheet</md-button>
+                            </section>  
+                            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 2</section>  
+                            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 3</section>  
+                            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 4</section>  
+                        </div>
+                      </div>
+
+                      <h3>Full-Width Content with Sidenav</h3>
+                      <div layout="row" class="afsds-content-wrapper" >  
+                          <md-sidenav class="md-sidenav-left" md-component-id="leftInner3" md-is-open="true" md-disable-backdrop flex-gt-sm="25" flex-sm="30" flex-xs="100" id="bottom-sheet-wrapper-3">
+                                <md-content layout="column">
+                                    <span >Sidenav</span>
+                                    <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet2()" hide-xs>Open Bottom Sheet</md-button>
+                                    <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet3()" hide-gt-xs>Open Bottom Sheet</md-button>
+                                </md-content>
+                                <section class="afsds-layout-section-mobile">
+                                    <md-button class="afsds-toggle-mobile-content" ng-click="mobileContentVisible = !mobileContentVisible">
+                                        <span ng-hide="mobileContentVisible">Show Content</span>
+                                        <span ng-hide="!mobileContentVisible">Hide Content</span>
+                                    </md-button>
+                                    <div class="afsds-content-container-mobile" ng-hide="!mobileContentVisible">Mobile Content</div>
+                                </section>
+
+
+                          </md-sidenav>
+                          <section class="afsds-layout-section" flex ng-class="{'afsds-layout-section-sidenav-open':!sideNavClosed2}" layout="row" id="bottom-sheet-wrapper-2">
+                                <md-button class="md-icon-button afsds-toggle-sidenav" aria-label="Expand Table View" ng-click="vm.toggleLeft3();sideNavClosed2 = !sideNavClosed2" >
+                                    <i class="fa fa-angle-double-left" aria-hidden="true" ng-hide="sideNavClosed2"></i>
+                                    <i class="fa fa-angle-double-right" aria-hidden="true" ng-hide="!sideNavClosed2"></i>
+                                </md-button>
+                                <div flex="100" class="afsds-content-container">Content</div>
+
+                          </section>
+                      </div>
+                  </xmp>
+                    
+                </md-content>
+            </md-tab>
+            <md-tab class="afsds-tab" label="JS"></md-tab>
+            
+        </md-tabs>
+        </section>
+    
+  </afsds-code>
+  <afsds-demo ng-controller="layoutCtrl">
+    <h4>Example</h4>  
+      
+     <h3>Full-Width Content</h3>
+      <div layout="row" class="afsds-content-wrapper" id="bottom-sheet-wrapper-1">
+        <div layout="column" flex-gt-xs="90" flex-offset-gt-xs="5" flex-xs="100">
+            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 1
+                <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet1()">Open Bottom Sheet</md-button>
+            </section>  
+            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 2</section>  
+            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 3</section>  
+            <section class="afsds-content-container" layout="column" layout-align="start center">Content Section 4</section>  
+        </div>
+      </div>
+      
+      <h3>Full-Width Content with Sidenav</h3>
+      <div layout="row" class="afsds-content-wrapper" >  
+          <md-sidenav class="md-sidenav-left" md-component-id="leftInner3" md-is-open="true" md-disable-backdrop flex-gt-sm="25" flex-sm="30" flex-xs="100" id="bottom-sheet-wrapper-3">
+                <md-content layout="column">
+                    <span >Sidenav</span>
+                    <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet2()" hide-xs>Open Bottom Sheet</md-button>
+                    <md-button class="md-button afsds-primary-button" ng-click="vm.openBottomSheet3()" hide-gt-xs>Open Bottom Sheet</md-button>
+                </md-content>
+                <section class="afsds-layout-section-mobile">
+                    <md-button class="afsds-toggle-mobile-content" ng-click="mobileContentVisible = !mobileContentVisible">
+                        <span ng-hide="mobileContentVisible">Show Content</span>
+                        <span ng-hide="!mobileContentVisible">Hide Content</span>
+                    </md-button>
+                    <div class="afsds-content-container-mobile" ng-hide="!mobileContentVisible">Mobile Content</div>
+                </section>
+                
+                
+          </md-sidenav>
+          <section class="afsds-layout-section" flex ng-class="{'afsds-layout-section-sidenav-open':!sideNavClosed2}" layout="row" id="bottom-sheet-wrapper-2">
+                <md-button class="md-icon-button afsds-toggle-sidenav" aria-label="Expand Table View" ng-click="vm.toggleLeft3();sideNavClosed2 = !sideNavClosed2" >
+                    <i class="fa fa-angle-double-left" aria-hidden="true" ng-hide="sideNavClosed2"></i>
+                    <i class="fa fa-angle-double-right" aria-hidden="true" ng-hide="!sideNavClosed2"></i>
+                </md-button>
+                <div flex="100" class="afsds-content-container">Content</div>
+                
+          </section>
+      </div>
+    
+  </afsds-demo>
+</display-wrapper>

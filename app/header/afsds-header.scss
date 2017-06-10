@@ -1,0 +1,148 @@
+.afsds-header {
+    
+    &.afsds-header-fixed-scroll {
+        top: -100px;
+        opacity: 0;
+        transition: .5s;
+        position: fixed;
+        width: 100%;
+        
+        &.active {
+            top: 0;
+            z-index: 20;
+            opacity: 1;
+        }
+    }
+    
+    md-toolbar {
+        min-height: 100px;    
+        background-color: $afsds-primary-blue;
+    }
+    
+    .md-toolbar-tools {
+        background-color: $afsds-primary-blue;
+        color: $afsds-white;
+        min-height: 100px;
+    }
+    
+    .afsds-logo {
+        height: 50px;
+    }
+    
+    .afsds-feedback-link {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .afsds-header-search-wrapper {
+       
+        background-color: rgba($afsds-white, 0.15);
+        border-radius: 2px;
+        height: 50px;
+
+        i {
+            color:white;
+            font-size: 18px;
+        }
+
+        input {
+            color: $afsds-white; 
+            background-color:transparent; 
+            border:none;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.afsds-header-wrapper {
+    width: 100%;
+}
+
+.afsds-header-section-p {
+    @media (max-width: 960px){
+         font-size: 10px;
+    }
+   
+}
+
+.afsds-header-search-width {
+    width: 400px;
+}
+
+
+
+.afsds-header-mobile {
+    @media (max-width: 960px){
+        
+        md-toolbar {
+            height: 50px;  
+            min-height: 50px;  
+        }
+
+        .md-toolbar-tools {
+            min-height: 50px;
+            height: 50px; 
+            padding: 0px 10px;
+        }
+
+        .afsds-header-search-wrapper {
+            height: 36px;
+        }
+
+        .afsds-logo {
+            height: 30px;
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+.afsds-header-sidenav {
+     
+    md-toolbar {
+        height: 50px;  
+        min-height: 50px;  
+    }
+
+    .md-toolbar-tools {
+        min-height: 50px;
+        height: 50px; 
+        padding: 0px 10px;
+    }
+
+    .afsds-header-search-wrapper {
+        height: 36px;
+    }
+
+    .afsds-logo {
+        height: 30px;
+        position: relative;
+        top: 2px;
+    }
+}
+
+.afsds-header-application {
+    
+    md-toolbar {    
+        background-color: $afsds-light-gray;
+    }
+    
+    .fa {
+        color: $afsds-black;
+    }
+    
+    .md-toolbar-tools {
+        background-color: $afsds-light-gray;
+        color: $afsds-black;
+        max-height: none;
+        height: inherit;
+    }
+}
+
+.afsds-header-fixed-container {
+    position: relative;
+    z-index: 20;
+}

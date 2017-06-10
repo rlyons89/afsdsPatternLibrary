@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module("USCBPttrn")
+    angular.module("afsdsPttrn")
         .controller("mainCtrl", ["$timeout", "$mdSidenav","RouteService", function ($timeout, $mdSidenav,RouteService) {
             var vm = this;
             vm.toggle = toggle;

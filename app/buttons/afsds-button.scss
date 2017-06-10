@@ -1,0 +1,306 @@
+a {
+    color: $afsds-primary-blue;
+    text-decoration: none;
+    
+    &:focus{
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+        color: #23527c;
+        text-decoration: underline;
+    }
+
+    &:hover{
+        outline: 0;
+        color: #23527c;
+        text-decoration: underline;
+    }
+    &:active{
+        outline: 0;
+    }
+}
+
+.md-button {
+    font-weight: 700;
+    margin: 0;
+    text-transform: none;
+    font-size: 16px;
+    
+     @media (max-width: 600px){
+         font-size: 13px;
+         font-weight: 500;
+    }
+    
+    &.afsds-primary-button {
+        border-radius: 2px;    
+        background-color: $afsds-white;
+        color: $afsds-primary-blue;
+        border: 1px solid $afsds-primary-blue;
+         
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-primary-blue;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor: pointer;
+        }
+        
+        span {
+            margin-left: -5px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    
+    &.afsds-alternate-button {
+        border-radius: 2px;    
+        background-color: $afsds-white;
+        color: $afsds-light-blue;
+        border: 1px solid $afsds-light-blue;
+         
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-light-blue;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor: pointer;
+        }
+        
+        span {
+            margin-left: -5px;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+
+    &.afsds-warn-button {
+        border-radius: 2px;    
+        background-color: $afsds-warning-background;
+        color: $afsds-warning-text;
+        border: 1px solid $afsds-warning-text;
+        
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-warning-text;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor:pointer;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    
+    &.afsds-error-button {
+        border-radius: 2px;    
+        background-color: $afsds-error-background;
+        color: $afsds-error-text;
+        border: 1px solid $afsds-error-text;
+        
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-error-text;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor:pointer;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    
+    &.afsds-success-button {
+        border-radius: 2px;    
+        background-color: $afsds-success-background;
+        color: $afsds-success-text;
+        border: 1px solid $afsds-success-text;
+        
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-success-text;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor:pointer;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    
+    &.afsds-info-button {
+        border-radius: 2px;    
+        background-color: $afsds-info-background;
+        color: $afsds-info-text;
+        border: 1px solid $afsds-info-text;
+        
+        &:hover:not([disabled]), &:focus:not([disabled]) {
+            background-color: $afsds-info-text;
+            color: $afsds-white;
+            border: 1px solid $afsds-white;
+            cursor:pointer;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+
+    &.afsds-primary-link {
+        color: $afsds-primary-blue;
+        min-width:0;
+        padding: 0;
+        
+        &:hover, &:focus {
+          text-decoration: underline;
+          background-color: transparent;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+        }
+        
+    }
+
+    &.afsds-secondary-link {
+        color: $afsds-white;
+        min-width:0;
+        padding: 0;
+      
+        &:hover, &:focus {
+            text-decoration: underline;
+            background-color: transparent;
+        }
+      
+        .material-icons, .fa {
+            vertical-align: middle;
+        }
+    }
+    
+    &.afsds-large-button {
+        height: 80px;
+        font-size: 1.4em;
+        border-radius: 0;
+        padding: 10px;
+        
+        span {
+            margin-left: -5px;
+            padding-right: 5px;
+        }
+        
+        .material-icons, .fa {
+            vertical-align: middle;
+            padding-left: 10px;
+        }
+    }
+    
+    &[disabled] {
+        color: $afsds-dark-gray;
+        border: 0;
+        background-color: $afsds-primary-gray;
+        
+        &:hover, &:focus {
+            text-decoration: none;  
+        }
+    }
+    
+    &.fixed-scroll-button {
+        position: fixed;
+        right: 20px;
+        bottom:20px;
+    }
+
+    &.afsds-toggle-sidenav {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        border-radius: 0;
+        width: 14px;
+        height: 55px;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        background: $afsds-light-gray;
+        border: 1px solid $afsds-primary-blue;
+        border-left: none;
+        box-shadow: 1px 1px 1px $afsds-light-gray;
+        color: $afsds-primary-blue;
+        z-index: 65;
+    }
+}
+
+
+.buttonSection {
+    background: $afsds-light-gray;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px;
+    height: 70px;
+}
+
+.afsds-library-nav-link {
+    margin: 0;
+}
+
+.afsds-inline-link {
+    min-height: 0;
+    line-height: inherit;
+    margin: 0;
+}
+
+.afsds-search-result-title-link {
+    text-transform: capitalize;
+    font-weight: bold; 
+    font-size: 16px;
+    line-height: normal;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+    white-space: normal;
+}
+
+.afsds-search-result-url-link {
+    text-transform: lowercase;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    line-height: normal;
+    min-height: 0;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+/* DELETE THIS ONCE WE HAVE NEW MAPS ICONS AND LAYOUT */
+
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}

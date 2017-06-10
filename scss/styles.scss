@@ -1,43 +1,28 @@
-@import './uscb-colors.scss';
-@import './app/layout/uscb-layout.scss';
-@import './app/buttons/uscb.button.scss';
+@import './afsds-colors.scss';
+@import './app/layout/afsds-layout.scss';
+@import './app/buttons/afsds-button.scss';
 @import './app/colors/color-helper-component/color-helper.scss';
-@import './app/GridList/uscb-gridlist.scss';
-@import './app/checkbox/uscb-checkbox.scss';
-@import './app/forms-input/uscb-form-input.scss';
-@import './app/header/uscb-header.scss';
-@import './app/footer/uscb-footer.scss';
-@import './app/accordion/uscb-accordion.scss';
-@import './app/tooltips/uscb-tooltips.scss';
-@import './app/typography/uscb-typography.scss';
-@import './app/list-items/uscb-list-items.scss';
-@import './app/chips/uscb-chips.scss';
-@import './app/toasts/uscb-toasts.scss';
-@import './app/tabs/uscb-tabs.scss';
-@import './app/progress/uscb-progress.scss';
-@import './app/pagination/uscb-pagination.scss';
-@import './app/webpages/webpages.scss';
-@import './app/Search/uscb-search-pattern.scss';
-@import './app/filterbasket/uscb-filter-basket.scss';
-@import './app/Thematic-map/thematicmap.scss';
-@import './app/Selection-Map/selectionmapp.scss';
-@import './app/table-preview/uscb-table-preview.scss';
-@import './app/infopanel/infopanel.scss';
-@import './app/aff-table/aff-table.scss';
-@import './app/single-search/uscb-single-search.scss';
-@import './app/display-banner/uscb-display-banner.scss';
-@import './app/quick-stats/quick-stats.scss';
-@import './app/related-search/related-search.scss';
-@import './app/learn-more/uscb-learn-more.scss';
-@import './app/cards/uscb-cards.scss';
-@import './app/icons/uscb-icons.scss';
-@import './app/disambiguation-section/disambiguation.comp.scss';
+@import './app/GridList/afsds-gridlist.scss';
+@import './app/forms-input/afsds-form-input.scss';
+@import './app/header/afsds-header.scss';
+@import './app/footer/afsds-footer.scss';
+@import './app/tooltips/afsds-tooltips.scss';
+@import './app/typography/afsds-typography.scss';
+@import './app/chips/afsds-chips.scss';
+@import './app/toasts/afsds-toasts.scss';
+@import './app/tabs/afsds-tabs.scss';
+@import './app/progress/afsds-progress.scss';
+@import './app/pagination/afsds-pagination.scss';
+@import './app/Search/afsds-search-pattern.scss';
+@import './app/display-banner/afsds-display-banner.scss';
+@import './app/cards/afsds-cards.scss';
+@import './app/icons/afsds-icons.scss';
 
 
 
 md-toolbar:not(.md-menu-toolbar) {
-  &.uscb-toolbar-theme{
-    background-color: $uscb-primary-blue;
+  &.afsds-toolbar-theme{
+    background-color: $afsds-primary-blue;
     padding: 0 10px;
       
       h3 {
@@ -45,13 +30,13 @@ md-toolbar:not(.md-menu-toolbar) {
       }
   }
 
-  &.uscb-toolbar-gray{
+  &.afsds-toolbar-gray{
     background-color: whitesmoke;
     color: black;
   }
 }
 
-.uscb-list-item-nav {
+.afsds-list-item-nav {
     min-height: 0;
     
     &:before {
@@ -93,18 +78,18 @@ md-tab-content {
 .displayNone{
   display: none;
 }
-.uscb-pull-right{
+.afsds-pull-right{
   position:absolute;
   right: -1px;
 }
 
-.uscb-pull-right-icon{
+.afsds-pull-right-icon{
   position: absolute;
   font-size: 30px;
   right: 10px;
   top:3px;
 }
-.uscb-no-hover{
+.afsds-no-hover{
   font-style: italic;
   cursor: no-drop;
   color:rgba(0,0,0,0.38);
@@ -115,15 +100,15 @@ md-tab-content {
   }
 }
 
-md-checkbox[disabled].uscb-primary-checkbox{
+md-checkbox[disabled].afsds-primary-checkbox{
   cursor: no-drop;
 }
-.uscb-z-index-5 {
+.afsds-z-index-5 {
   z-index: 5;
 }
 
-.uscb-example-page-container {
-    border: 2px solid $uscb-dark-gray;
+.afsds-example-page-container {
+    border: 2px solid $afsds-dark-gray;
     margin: 10px;
     
      @media(max-width: 599px){
