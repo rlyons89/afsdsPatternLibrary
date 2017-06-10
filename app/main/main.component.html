@@ -1,0 +1,41 @@
+<div layout="column" style="height:100%;" ng-cloak>
+    <md-toolbar class="uscb-toolbar-theme" layout="row" layout-align="space-between"> 
+        <h3 ui-sref="home.patterns">CEDSCI Pattern Library</h3>
+        <md-button ng-click="vm.toggle()" class="uscb-secondary-link" hide-gt-md layout-padding><i class="fa fa-bars fa-2x"></i>  </md-button>
+    </md-toolbar>
+    <section layout="row" flex>
+
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4" >
+
+            <md-content layout-padding >
+                <md-list >   
+                    <h3>Foundations</h3>
+                    <md-list-item ng-repeat="foundation in vm.list[0]" class="uscb-list-item-nav" >
+                        <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{foundation.route}}" ng-click="vm.toggle()" >{{foundation.name}}</md-button>
+                    </md-list-item>
+                    <h3>Components</h3>
+                    <md-list-item ng-repeat="component in vm.list[1]" class="uscb-list-item-nav uscb-left-align" >
+                        <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{component.route}}" ng-click="vm.toggle()">{{component.name}}</md-button>
+                    </md-list-item>
+
+                    <h3>Patterns</h3>
+                    <md-list-item ng-repeat="pattern in vm.list[2]" class="uscb-list-item-nav uscb-left-align" >
+                        <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{pattern.route}}" ng-click="vm.toggle()">{{pattern.name}}</md-button>
+                    </md-list-item>
+
+                    <h3>Examples</h3>
+                    <md-list-item ng-repeat="example in vm.list[3]" class="uscb-list-item-nav uscb-left-align" >
+                        <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{example.route}}" ng-click="vm.toggle()">{{example.name}}</md-button>
+                    </md-list-item>
+                </md-list>
+            </md-content>
+
+        </md-sidenav>
+
+        <md-content flex layout-padding>
+            <ui-view id="componentView" ></ui-view>
+        </md-content>
+
+    </section>
+
+</div>

@@ -1,0 +1,47 @@
+<display-wrapper title="Colors">
+    <uscb-description>
+        <h4>Description</h4>  
+        <h5>Primary Colors</h5>
+        <p>These are the primary colors used on data.census.gov. </p>
+        <h5>Error Colors</h5>
+        <p>These are the error colors used on data.census.gov. </p>
+        <h5>Warning Colors</h5>
+        <p>These are the warning colors used on data.census.gov. </p>
+        <h5>Success Colors</h5>
+        <p>These are the success colors used on data.census.gov. </p>
+        <h5>Informational Colors</h5>
+        <p>These are the informational colors used on data.census.gov. </p>
+  </uscb-description>
+    <uscb-code>
+        <h4>Code</h4> 
+        <section class="uscb-grey-content-container uscb-tabs-wrapper" layout="row">
+            <md-tabs class="uscb-tabs" flex-gt-xs="90" flex-offset-gt-xs="5" flex-xs="100">
+                <md-tab class="uscb-tab" label="HTML"></md-tab>
+                <md-tab class="uscb-tab" label="JS"></md-tab>
+            </md-tabs>
+        </section>
+    </uscb-code>
+
+    <uscb-demo>
+        <h4>Example</h4>
+        <section>
+            <p>Primary Colors</p>
+            <color-helper colorlist="vm.colorList[0]"> </color-helper>
+            <color-helper colorlist="vm.colorList[1]"></color-helper>
+            <color-helper colorlist="vm.colorList[2]"></color-helper>
+            
+            <p>Error Colors</p>
+            <color-helper colorlist="vm.colorList[3]"></color-helper>
+            
+            <p>Warning Colors</p>
+            <color-helper colorlist="vm.colorList[4]"></color-helper>
+            
+            <p>Success Colors</p>
+            <color-helper colorlist="vm.colorList[5]"></color-helper>
+            
+            <p>Informational Colors</p>
+            <color-helper colorlist="vm.colorList[6]"></color-helper>
+            
+        </section>
+    </uscb-demo>
+</display-wrapper>

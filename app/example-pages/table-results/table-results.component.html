@@ -1,0 +1,141 @@
+<md-toolbar class="uscb-toolbar-theme" layout="row" layout-align="space-between"> 
+    <h3 ui-sref="home.patterns">CEDSCI Pattern Library</h3>
+    <md-button ng-click="vm.toggle()" class="uscb-secondary-link"><i class="fa fa-bars fa-2x"></i>  </md-button>
+</md-toolbar>
+<section layout="row" flex>
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+        <md-content layout-padding>
+            <md-list>   
+                <h3>Foundations</h3>
+                <md-list-item ng-repeat="foundation in vm.list[0]" class="uscb-list-item-nav" >
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{foundation.route}}" ng-click="vm.toggle()" >{{foundation.name}}</md-button>
+                </md-list-item>
+                <h3>Components</h3>
+                <md-list-item ng-repeat="component in vm.list[1]" class="uscb-list-item-nav uscb-left-align" >
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{component.route}}" ng-click="vm.toggle()">{{component.name}}</md-button>
+                </md-list-item>
+
+                <h3>Patterns</h3>
+                <md-list-item ng-repeat="pattern in vm.list[2]" class="uscb-list-item-nav uscb-left-align" >
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{pattern.route}}" ng-click="vm.toggle()">{{pattern.name}}</md-button>
+                </md-list-item>
+
+                <h3>Examples</h3>
+                <md-list-item ng-repeat="example in vm.list[3]" class="uscb-list-item-nav uscb-left-align" >
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{example.route}}" ng-click="vm.toggle()">{{example.name}}</md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+    <md-content flex layout-padding >
+        <h3>Table Results</h3>
+        <div ng-controller="tableResultsCtrl" class="uscb-example-page-container uscb-padding-0">
+            <div layout="row" class="uscb-content-wrapper-fixed-height" >  
+                <md-sidenav class="md-sidenav-left" md-component-id="leftInner3" md-is-open="true" md-disable-backdrop flex-gt-sm="30" flex-sm="30" flex-xs="100" id="bottom-sheet-wrapper-3">
+                    <md-content layout="column">
+                        <header class="uscb-header uscb-header-sidenav">
+                            <md-toolbar>
+                                <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                                    <a href="#" title="data.census.gov" flex="25">
+                                        <img src="app/images/census-logo-white.svg" class="uscb-logo" />
+                                    </a>
+                                    <span flex></span>
+                                    <div class="uscb-header-search-wrapper" layout="row" flex="70" > 
+                                        <md-button flex="25" class="uscb-secondary-link"> <i class="fa fa-search" aria-hidden="true" ></i>  </md-button>
+                                        <input type="text" name="" value="" flex="75" >    
+                                    </div>
+                                </div>
+                            </md-toolbar>
+                        </header>
+                        <section class="uscb-tabs-wrapper uscb-padding-LR-5" layout="row">
+                            <md-tabs class="uscb-tabs uscb-tabs-sidenav" flex="100">
+                                <md-tab class="uscb-tab" label="All"></md-tab>
+                                <md-tab class="uscb-tab" label="Tables"></md-tab>
+                                <md-tab class="uscb-tab" label="Webpages"></md-tab>
+                                <md-tab class="uscb-tab" label="Maps"></md-tab>
+                            </md-tabs>
+                        </section>
+                        <section class="uscb-layout-section-mobile uscb-padding-LR-5">
+                            <div layout="row" layout-align="start center" class="uscb-padding-TOP-15">
+                                <h3 class="uscb-h3">Tables</h3><p class="uscb-body-text uscb-light-text uscb-padding-10">(335 results)</p>
+                            </div>
+                            <div layout="row" class="uscb-padding-TOP-15">
+                                <md-button class="uscb-primary-button" flex="100">Filter Results</md-button>
+                            </div>
+                            <div layout="row" class="uscb-padding-TOP-15 uscb-padding-BTM-15">
+                                <md-button class="uscb-primary-button" flex="100">Select Tables to Download</md-button>
+                            </div>
+                            
+                            <!--
+                            
+                            
+                            <md-button class="md-button uscb-primary-button" ng-click="vm.openBottomSheet2()" hide-xs>Open Bottom Sheet</md-button>
+                            <md-button class="md-button uscb-primary-button" ng-click="vm.openBottomSheet3()" hide-gt-xs>Open Bottom Sheet</md-button>
+
+-->
+                        </section>
+                        <hr class="uscb-hr-2 uscb-padding-0">
+                        <section class="uscb-layout-section-mobile uscb-sidenav-results-section" >
+                            
+                                <section class="" ng-repeat="item in vm.tables | limitTo:10" flex>
+                                    <div aria-label="Go To Table Button" class="uscb-table-action-container uscb-padding-LR-5 uscb-padding-TOP-30" flex="100" layout="row" layout-align="center center" ng-class="{ 'uscb-table-action-container-active uscb-padding-BTM-15' : item.showExpandedOptions, 'uscb-padding-BTM-30': !item.showExpandedOptions}" ng-click="vm.showExpandedOptions(item)">
+                                        <div aria-hidden="true">
+                                            <div layout="row" flex="100">
+                                                <h5 class="uscb-h5 uscb-block-text" flex="100"
+                                                    ng-class="{ 'uscb-link-color uscb-bold-text' : item.showExpandedOptions}">{{item.concept}}</h5>
+                                            </div>
+                                            <p class="uscb-body-text-small uscb-light-text">Table ID: {{item.tableID}} </p>
+                                        </div>     
+                                    </div>
+                                    <div class="uscb-table-list-item-expanded uscb-padding-LR-5 uscb-padding-BTM-30 uscb-padding-TOP-15" ng-show="item.showExpandedOptions === true">    
+                                        <md-input-container class="md-block" flex-gt-sm>
+                                            <label>Switch Dataset:</label>
+                                            <md-select ng-model="vm.dataset" class="uscb-primary-select">
+                                              <md-option ng-repeat="dataset in vm.datasets" ng-selected="dataset === vm.datasets[0]" value="{{dataset.label}}">
+                                                {{dataset.label}}
+                                              </md-option>
+                                            </md-select>
+                                        </md-input-container>
+                                        <div layout="row">
+                                            <md-button class="uscb-alternate-button" aria-label="Go To full view" flex="100"> 
+                                                View Full Table &amp; Customize
+                                            </md-button> 
+                                        </div>
+                                    </div>
+                                    <hr class="uscb-hr-2 uscb-padding-0">
+                                </section>
+                                <div layout="row">
+                                    <md-button class="uscb-primary-link" ng-href="{{googleUrl}}" target="_blank" flex="100">Load more +</md-button>
+                                </div>
+                                <footer class="uscb-footer uscb-footer-sidenav uscb-padding-10" layout="row" layout-align="center center">
+                                    <div >
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Accessibility">Accessibility</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Information Quality" >Information Quality</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="FOIA" >FOIA</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Data Protection and Privacy Policy" >Data Protection and Privacy Policy</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="U.S. Department of Commerce" >U.S. Department of Commerce</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Release Notes" >Release Notes</md-button>
+                                        <span>&vert;</span>
+                                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="FAQs" >FAQs</md-button>
+                                    </div>
+                                </footer>
+                        </section>
+                    </md-content>
+                </md-sidenav>
+                <section class="uscb-layout-section" flex ng-class="{'uscb-layout-section-sidenav-open':!sideNavClosed2}" layout="row" id="bottom-sheet-wrapper-2">
+                    <md-button class="md-icon-button uscb-toggle-sidenav" aria-label="Expand Table View" ng-click="vm.toggleLeft3();sideNavClosed2 = !sideNavClosed2" >
+                        <i class="fa fa-angle-double-left" aria-hidden="true" ng-hide="sideNavClosed2"></i>
+                        <i class="fa fa-angle-double-right" aria-hidden="true" ng-hide="!sideNavClosed2"></i>
+                    </md-button>
+                    <div flex="100" class="uscb-content-container">Content</div>
+
+                </section>
+            </div>
+        </div>
+    </md-content>
+</section>

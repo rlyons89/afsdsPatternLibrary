@@ -1,0 +1,74 @@
+<md-content>
+    <h5>Table Items</h5>
+    <md-list flex class="uscb-table-results-comp">
+        <md-list-item ng-repeat="item in vm.tables | limitTo:3">
+            <section layout="column" flex>
+                <div layout="row">
+                    <span flex="70" class="uscb-table-title">{{item.concept}}</span>
+                    <span flex="30" class="uscb-table-id">Table ID: {{item.tableID}}</span>
+                </div>
+                <div layout="row">
+                    <md-input-container class="md-block" flex="70">
+                        <md-select ng-model="elm.selectedItem" class="uscb-primary-select">
+                            <md-option ng-repeat="elm in vm.dropDownItems" value="{{elm.title}}"> {{elm.title}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <div flex="30" class="uscb-icon-align-right">
+                        <a href=""><i class="fa fa-globe uscb-table-icon" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-table uscb-table-icon" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </section>
+
+        </md-list-item>
+    </md-list>
+</md-content>
+<md-content>
+    <h5>Webpages</h5>
+    <md-list>
+        <md-list-item ng-repeat="item in vm.data | limitTo : 5">
+            <section layout="column" class="uscb-webpages-section">
+                <a href="">{{item.label}}</a>
+                <p>{{item.concept}}</p>
+                <a class="smallLink" href="">{{item.link}}</a>
+            </section>
+        </md-list-item>
+    </md-list>
+</md-content>
+<h5>Table List</h5>
+<md-content class="uscb-background-light-gray">
+    
+    <section class="" layout="row" ng-repeat="item in vm.tables | limitTo:3">
+        <div hide-xs flex="75" layout="column" layout-align="center start">
+            <h4 class="uscb-h5">{{item.concept}}</h4>
+            <p class="uscb-body-text uscb-light-text">Source: <span class="uscb-table-id-text">Table {{item.tableID}}</span> </p>
+        </div>
+        <md-button aria-label="Go To Table Button" class="uscb-table-action-container" flex-xs="100" flex="25" layout="row" layout-align="center center" >
+              <div hide-gt-xs flex-xs="75" flex="80" layout="column" layout-align="center start" aria-hidden="true">
+                <h4 class="uscb-h5">{{item.concept}}</h4>
+                <p class="uscb-body-text uscb-light-text ">Source: <span class="uscb-table-id-text">Table {{item.tableID}}</span> </p>
+            </div>     
+
+            <md-button class="uscb-primary-button " aria-label="Go To full view" hide-xs> View Full Map </md-button> 
+            <md-button aria-hidden="true" flex="20" class="uscb-primary-link" ng-href="{{googleUrl}}" target="_blank" hide-gt-xs aria-label="Go to full view"><i class="fa fa-chevron-right" aria-hidden="true"></i></md-button>    
+        </md-button>
+    </section>
+
+</md-content>
+
+<md-content>
+    <h5>PI-12 Weblist </h5>
+    <md-list>
+        <md-list-item class="uscb-card-weblist" ng-repeat="item in vm.data | limitTo : 5" layout="row" layout-align="center center">
+           <section flex="10" hide-xs layout-fill layout="row" >
+                 <img  src="app/images/michigan.png" alt="{{item.label}}">
+           </section>
+           
+            <section layout="column" class="uscb-webpages-section" flex="90" flex-xs="100">
+                <h5 class="uscb-h5 uscb-link-color" href="">{{item.label}}</h5>
+                <p class="uscb-body">{{item.concept}}</p>
+               
+            </section>
+        </md-list-item>
+    </md-list>
+</md-content>

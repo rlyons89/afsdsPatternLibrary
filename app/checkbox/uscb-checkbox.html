@@ -1,0 +1,46 @@
+<display-wrapper title="Checkbox">
+    <uscb-description>
+        <h4>Description</h4>  
+        <h5>Purpose</h5>
+        <p>Checkboxes are used as indication that an object can be selected from a visible list of one or more options.</p>
+        <h5>Usage</h5>
+        <p>Checkboxes have two different states: unselected and selected. The selected state is indicated by a change in the appearance of the box.  Checkboxes can be used for lists of more than 1 option that are non-mutually exclusive. CEDSCI uses checkboxes in the Filter panel on individual filter items as well as the "Transpose" feature on table expanded views.</p>
+        <h5>Do</h5>
+        <ul>
+            <li>Make a larger area than the physical box correspond with triggering the selected state, such as the label that the box corresponds to.</li>
+            <li>Size the box to web accessibility standard.</li>
+        </ul>
+        <h5>Do not</h5>
+        <ul>
+            <li>Make only the physical box on checkbox entity interactive.</li>
+        </ul>
+  </uscb-description>
+    <uscb-code>
+        <h4>Code</h4> 
+        <md-tabs class="uscb-tabs">
+            <md-tab label="HTML">
+                <xmp>
+                    <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="uscb-primary-checkbox">
+                        Checkbox (uscb-primary-blue): No Ink
+                    </md-checkbox>
+
+                    <md-checkbox aria-label="Checkbox No Ink" class="uscb-primary-checkbox">
+                        Checkbox (uscb-primary-blue)
+                    </md-checkbox>
+                </xmp>
+            </md-tab>
+            <md-tab label="JS"></md-tab>
+        </md-tabs>
+    </uscb-code>
+
+    <uscb-demo>
+        <h4>Example</h4>
+        <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="uscb-primary-checkbox">
+            Checkbox (uscb-primary-blue): No Ink
+        </md-checkbox>
+        
+        <md-checkbox aria-label="Checkbox No Ink" class="uscb-primary-checkbox">
+            Checkbox (uscb-primary-blue)
+        </md-checkbox>
+    </uscb-demo>
+</display-wrapper>

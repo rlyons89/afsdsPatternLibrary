@@ -1,0 +1,111 @@
+<display-wrapper title="Banner">
+    <uscb-description>
+
+    </uscb-description>
+    <uscb-code>
+        <h4>Code</h4>
+        <md-tabs>
+            <md-tab label="Html">
+                <md-content>
+                    <xmp>
+                        <section class="uscb-content-container uscb-grey-content-container uscb-padding-10" layout="row" layout-align="center center"
+                            ng-hide="vm.hideDefaultBanner">
+                            <p class="uscb-header-section-p" flex-gt-sm="95" flex-xs="85">This is a preview of the Census Bureau's new data exploration platform. We'll be releasing platform
+                                features in phases so you can try them sooner and send us your feedback. The data presented
+                                here are test data and should not be used for purposes beyond evaluating the functionality
+                                of the platform. For official Census data, please continue to use our data resources at
+                                <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link" target="_blank">census.gov/data.html</a>.</p>
+                            <md-button flex-gt-sm="5" flex-xs="10" href="" class="uscb-primary-link" ng-click="vm.hideDefaultBanner = true" layout="row"
+                                layout-align="center center">
+                                <i class="fa fa-2x fa-times-circle" aria-hidden="true" aria-label="Hide Preview Message"></i>
+                            </md-button>
+                        </section>
+
+
+                    </xmp>
+
+                </md-content>
+            </md-tab>
+            <md-tab label="JS"></md-tab>
+        </md-tabs>
+
+    </uscb-code>
+    <uscb-demo>
+        <h4>Example</h4>
+        <section>
+
+            <section class="uscb-content-container uscb-grey-content-container uscb-padding-10" layout="row" layout-align="center center"
+                ng-hide="vm.hideDefaultBanner">
+                <p class="uscb-header-section-p" flex-gt-sm="95" flex-xs="85">This is a preview of the Census Bureau's new data exploration platform. We'll be releasing platform features
+                    in phases so you can try them sooner and send us your feedback. The data presented here are test data
+                    and should not be used for purposes beyond evaluating the functionality of the platform. For official
+                    Census data, please continue to use our data resources at <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link"
+                        target="_blank">census.gov/data.html</a>.</p>
+                <md-button flex-gt-sm="5" flex-xs="10" href="" class="uscb-primary-link" ng-click="vm.hideDefaultBanner = true" layout="row"
+                    layout-align="center center">
+                    <i class="fa fa-2x fa-times-circle" aria-hidden="true" aria-label="Hide Preview Message"></i>
+                </md-button>
+            </section>
+            <p>Default banner</p>
+
+            <section class="uscb-content-container uscb-info-content-container uscb-padding-10-30" layout="row" layout-align="center start">
+                <i class="fa fa-info-circle fa-2x uscb-banner-icon-left uscb-banner-info-txt" aria-hidden="true" flex="10" layout-align="end start"></i>
+                <div flex="80">
+                    <p class="uscb-banner-header-text uscb-banner-info-txt">Census.gov Info Headline</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                        <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link " target="_blank">census.gov/data.html</a>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <a href="" class="uscb-primary-link"><i class="fa fa-times fa-2x uscb-banner-info-txt" aria-hidden="true" flex="10" layout-align="start start"></i></a>
+            </section>
+
+            <p>Info Banner</p>
+
+            <section class="uscb-content-container uscb-warning-content-container uscb-padding-10-30" layout="row" layout-align="center start">
+                <i class="fa fa-exclamation-triangle fa-2x uscb-banner-icon-left uscb-banner-warn-txt" aria-hidden="true" flex="10" layout-align="end start"></i>
+                <div flex="80">
+                    <p class="uscb-banner-header-text uscb-banner-warn-txt">Census.gov Info Headline</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                        <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link uscb-banner-warn-txt" target="_blank">census.gov/data.html</a>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <a href="" class="uscb-primary-link"><i class="fa fa-times fa-2x uscb-banner-warn-txt" aria-hidden="true" flex="10" layout-align="start start"></i></a>
+            </section>
+            <p>Warning Banner</p>
+
+
+             <section class="uscb-content-container uscb-success-content-container uscb-padding-10-30" layout="row" layout-align="center start">
+                <i class="fa fa-check fa-2x uscb-banner-icon-left uscb-banner-success-txt" aria-hidden="true" flex="10" layout-align="end start"></i>
+                <div flex="80">
+                    <p class="uscb-banner-header-text uscb-banner-success-txt">Census.gov Info Headline</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                        <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link uscb-banner-success-txt" target="_blank">census.gov/data.html</a>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <a href="" class="uscb-primary-link"><i class="fa fa-times fa-2x uscb-banner-success-txt" aria-hidden="true" flex="10" layout-align="start start"></i></a>
+            </section>
+            <p>Success Banner</p>
+
+            <section class="uscb-content-container uscb-error-content-container uscb-padding-10-30" layout="row" layout-align="center start">
+                <i class="fa fa-ban fa-2x uscb-banner-icon-left uscb-banner-error-txt" aria-hidden="true" flex="10" layout-align="end start"></i>
+                <div flex="80">
+                    <p class="uscb-banner-header-text uscb-banner-error-txt">Census.gov Info Headline</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...
+                        <a href="http://www.census.gov/data.html" class="uscb-primary-link uscb-inline-link uscb-banner-error-txt" target="_blank">census.gov/data.html</a>
+                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </p>
+                </div>
+                <a href="" class="uscb-primary-link"><i class="fa fa-times fa-2x uscb-banner-error-txt" aria-hidden="true" flex="10" layout-align="start start"></i></a>
+            </section>
+            <p>Error Banner</p>
+
+        </section>
+    </uscb-demo>
+</display-wrapper>

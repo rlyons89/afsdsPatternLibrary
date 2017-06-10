@@ -1,0 +1,32 @@
+[ 
+    [
+        {"name":"$uscb-black", "color":"#212121"},
+        {"name":"$uscb-white", "color":" #fff"}
+    ],
+    [   
+        {"name":"$uscb-primary-blue", "color":"#205493"},
+        {"name":"$uscb-light-blue", "color":"#1276db"}
+        
+    ],
+    [
+        {"name":"$uscb-dark-gray", "color":" #8994a1"},
+        {"name":"$uscb-primary-gray", "color":"#dce0e9"},
+        {"name":"$uscb-light-gray", "color":"#e4e4e4"}
+    ],
+    [
+        {"name":"$uscb-error-text", "color":" #b51f23"},
+        {"name":"$uscb-error-background", "color":" #ffebee"}
+    ],
+    [
+        {"name":"$uscb-warning-text", "color":" #8e4302"},
+        {"name":"$uscb-warning-background", "color":" #fff8e1"}
+    ],
+    [
+        {"name":"$uscb-success-text", "color":" #1b5e20"},
+        {"name":"$uscb-success-background", "color":" #e8f5e9"}
+    ],
+    [
+        {"name":"$uscb-informational-text", "color":" #434343"},
+        {"name":"$uscb-informational-background", "color":" #f5f7f9"}
+    ]
+]

@@ -1,0 +1,33 @@
+<display-wrapper title="Related Search">
+    <uscb-description>
+         <h4>Description</h4>
+         related Search
+    </uscb-description>
+
+    <uscb-code>
+        <h4>Code</h4>
+        <md-tabs class="uscb-tabs">
+            <md-tab label="HTML">
+                <xmp>
+                    
+                </xmp>
+            </md-tab>
+            <md-tab label="JS">
+                <xmp>
+                   
+                </xmp>
+            </md-tab>
+
+        </md-tabs>
+    </uscb-code>
+    <uscb-demo>
+        <section class="uscb-layout-width-100">
+            <div class="uscb-layout-title-bar" layout="row" layout-align="start center">
+                <h4 class="uscb-h4">Related Search</h4>
+            </div>
+            <div class="uscb-relatedSearch-link-container">
+                <md-button class="uscb-primary-link uscb-relatedSearch-inline-47" ng-href="" target="_blank" ng-repeat="item in vm.listOfLinks">{{item.text}} <span class="uscb-bold-text">{{item.link}}</span></md-button>
+            </div>
+        </section>
+    </uscb-demo>
+</display-wrapper>

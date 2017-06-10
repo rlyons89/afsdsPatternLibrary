@@ -1,0 +1,329 @@
+<md-toolbar class="uscb-toolbar-theme" layout="row" layout-align="space-between">
+    <h3 ui-sref="home.patterns">CEDSCI Pattern Library</h3>
+    <md-button ng-click="vm.toggle()" class="uscb-secondary-link"><i class="fa fa-bars fa-2x"></i> </md-button>
+</md-toolbar>
+<section layout="row" flex>
+    <md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="4">
+        <md-content layout-padding>
+            <md-list>
+                <h3>Foundations</h3>
+                <md-list-item ng-repeat="foundation in vm.list[0]" class="uscb-list-item-nav">
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{foundation.route}}" ng-click="vm.toggle()">{{foundation.name}}</md-button>
+                </md-list-item>
+                <h3>Components</h3>
+                <md-list-item ng-repeat="component in vm.list[1]" class="uscb-list-item-nav uscb-left-align">
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{component.route}}" ng-click="vm.toggle()">{{component.name}}</md-button>
+                </md-list-item>
+
+                <h3>Patterns</h3>
+                <md-list-item ng-repeat="pattern in vm.list[2]" class="uscb-list-item-nav uscb-left-align">
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{pattern.route}}" ng-click="vm.toggle()">{{pattern.name}}</md-button>
+                </md-list-item>
+
+                <h3>Examples</h3>
+                <md-list-item ng-repeat="example in vm.list[3]" class="uscb-list-item-nav uscb-left-align">
+                    <md-button flex="100" class="uscb-primary-link uscb-library-nav-link uscb-left-align" ui-sref="{{example.route}}" ng-click="vm.toggle()">{{example.name}}</md-button>
+                </md-list-item>
+            </md-list>
+        </md-content>
+    </md-sidenav>
+
+    <md-content flex>
+        <h3>Geo Profile</h3>
+        <div class="uscb-example-page-container">
+            <div class="uscb-content-wrapper">
+                <header class="uscb-header uscb-header-mobile">
+                    <md-toolbar>
+                        <div class="md-toolbar-tools" layout="row" layout-align="center center"> <a href="#" title="data.census.gov"> <img src="app/images/census-logo-white.svg" class="uscb-logo" /> </a>                            <span flex></span>
+                            <div class="uscb-header-search-wrapper" layout="row" flex="30" flex-xs="70" flex-sm="70">
+                                <md-button flex-xs="20" flex="10" class="uscb-secondary-link"> <i class="fa fa-search" aria-hidden="true"></i> </md-button> <input type="text" name="" value=""
+                                    flex-xs="70" flex="90"> </div>
+                        </div>
+                    </md-toolbar>
+                </header>
+
+                <!--AT A Glance Section-->
+                <section class="uscb-content-container uscb-container-min-height uscb-padding-LR-10-5" layout-xs="column" layout="row" layout-align="space-between start">
+
+                    
+
+                    <div flex="45" flex-xs="100" flex-order="1" flex-order-xs="2" >
+                        <div hide-xs class="uscb-padding-TOP-45">
+                            <h1 class="uscb-h1 uscb-bold-text">Virginia</h1>
+                            <div layout="row">
+                                <p class="uscb-light-text">State in:&nbsp;</p>
+                                <a class="uscb-primary-link">United States</a>
+                            </div>
+                        </div>
+                        
+
+                        <div>
+                            <h2 class="uscb-h3 uscb-padding-BTM-15 uscb-padding-TOP-45 uscb-bold-text" hide-xs>Virginia at a Glance</h2>
+                            <h2 class="uscb-h5 uscb-padding-BTM-15 uscb-padding-TOP-15 uscb-bold-text" hide-gt-xs>Virginia at a Glance</h2>
+                            <p class="uscb-body-text uscb-light-text"> {{vm.virginiaText}}</p> <a class="uscb-primary-link" ng-repeat="item in vm.nearbyStates">{{item.name}}</a><span>.</span>
+                        </div>
+                    </div>
+
+                    <div flex="40" flex-xs="100" flex-order="2" flex-order-xs="1" layout-xs="row" >
+
+                        <img class="uscb-map-thumnbnail-size uscb-padding-TOP-60" src="app/images/placeholder.png" alt="" flex="100" hide-xs>
+                        <img class="uscb-map-thumnbnail-size uscb-padding-TOP-15" src="app/images/placeholder.png" alt="" flex="30" hide-gt-xs >
+
+                        <div hide-gt-xs flex-xs="65" flex-offset="5" class="uscb-padding-TOP-15">
+                            <h1 class="uscb-h3 uscb-bold-text">Virginia</h1>
+                            <p>State in: <a class="uscb-primary-link">United States</a> </p> 
+                        </div>
+
+                        <div hide-xs class="uscb-padding-TOP-30 uscb-padding-BTM-45">
+                            <div layout="row" layout-align="space-between center">
+                                <p class="uscb-light-text uscb-body-text-small" flex="30">STATE CAPITAL</p>
+                                <div flex="65">
+                                    <a href="#" class="uscb-primary-link">Richmond</a>
+                                </div>
+                            </div>
+                            <div layout="row" layout-align="space-between center" class="uscb-padding-TOP-15">
+                                <p class="uscb-light-text uscb-body-text-small" flex="30">MOST POPULOUS COUNTIES</p>
+                                <div flex="65">
+                                    <a href="#" class="uscb-primary-link">Fairfax</a><span>,&nbsp;</span><a href="#" class="uscb-primary-link">Prince William</a><span>,&nbsp;</span><a href="#" class="uscb-primary-link">Loudoun</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+
+
+                </section>
+                <!--ICON stats-->
+                <!--layout-align="center center"-->
+                <section class="uscb-content-container uscb-padding-TOP-15 uscb-container-min-height uscb-padding-LR-10-5" layout-wrap layout="row" layout-align-xs="center center" >
+                    <div class="uscb-border-right uscb-border-bottom uscb-flex-override-safari uscb-padding-TOP-15" layout="column" layout-align="center center" flex-xs="50"  flex="20">
+                        <object type="image/svg+xml" data="app/icons/svgs/People_black.svg" >
+                          People Logo <!-- fallback image in CSS -->
+                        </object>
+                        <p class="uscb-heading-label">8,382,993</p>
+                        <p class="uscb-body-text-small uscb-light-text uscb-center-align uscb-text-min-height">Population</p>
+                    </div>
+
+                    <div class="uscb-border-right uscb-border-bottom uscb-flex-override-safari uscb-padding-TOP-15" layout="column" layout-align="center center" flex-xs="50"  flex="20">
+                        <object type="image/svg+xml" data="app/icons/svgs/Housing_black.svg" >
+                          Housing Logo <!-- fallback image in CSS -->
+                        </object>
+                        <p class="uscb-heading-label">$65,015</p>
+                        <p class="uscb-body-text-small uscb-light-text uscb-center-align uscb-text-min-height">Median HouseHold Income</p>
+                    </div>
+
+                    <div class="uscb-border-right uscb-border-bottom uscb-flex-override-safari uscb-padding-TOP-15" layout="column" layout-align="center center" flex-xs="50"  flex="20">
+                        <object type="image/svg+xml" data="app/icons/svgs/Economy_black.svg" >
+                          Economy Logo <!-- fallback image in CSS -->
+                        </object>
+                        <p class="uscb-heading-label">11.2%</p>
+                        <p class="uscb-body-text-small uscb-light-text uscb-center-align uscb-text-min-height">Poverty Rate </p>
+                    </div>
+
+                    <div class="uscb-border-right uscb-border-bottom uscb-flex-override-safari uscb-padding-TOP-15" layout="column" layout-align="center center" flex-xs="50"  flex="20">
+                        <object type="image/svg+xml" data="app/icons/svgs/Employment_black.svg" >
+                          Employment Logo <!-- fallback image in CSS -->
+                        </object>
+                        <p class="uscb-heading-label">90.9%</p>
+                        <p class="uscb-body-text-small uscb-light-text uscb-center-align uscb-text-min-height">Employment Rate</p>
+                    </div>
+
+                    <div class="uscb-border-right uscb-border-bottom uscb-flex-override-safari uscb-padding-TOP-15" layout="column" layout-align="center center" flex-xs="50"  flex="20">
+                        <object type="image/svg+xml" data="app/icons/svgs/Education_black.svg" >
+                          Education Logo <!-- fallback image in CSS -->
+                        </object>
+                        <p class="uscb-heading-label">89.0%</p>
+                        <p class="uscb-body-text-small uscb-light-text uscb-center-align uscb-text-min-height">Education Attainment</p>
+                    </div>
+
+                </section>
+                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                <!--TABS-->
+                <section class="uscb-content-container uscb-padding-LR-10-5-0" layout-align="start center" >
+                    <div layout="row" class="uscb-padding-TOP-60" hide-xs></div>
+                    <div class="uscb-tabs-wrapper" layout="row">
+                        <md-tabs class="uscb-tabs" flex="100">
+                            <md-tab class="uscb-tab" label="People"></md-tab>
+                            <md-tab class="uscb-tab" label="Housing"></md-tab>
+                            <md-tab class="uscb-tab" label="Economy"></md-tab>
+                        </md-tabs>
+                    </div>
+                    <hr class="uscb-hr-1">
+                </section>
+                
+                <!--Data Visualization-->
+                <section layout-align="start center" >
+
+                    <!--Visualization-->
+                    <article class="uscb-padding-LR-10-5 uscb-content-container ">
+                        <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <div layout-xs="column" layout="row" layout-align="space-between start">
+                            <header flex="30" flex-xs="100">
+                                <div layout="row">
+                                    <a class="uscb-primary-link" ng-href="" target="_blank" hide-xs>Education</a>
+                                    <a class="uscb-primary-link uscb-body-text-small" ng-href="" target="_blank" hide-gt-xs>Education</a>
+                                </div>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                                <div layout="row" layout-align="start end">
+                                    <h2 class="uscb-h1 uscb-bold-text" hide-xs>88.9%</h2>
+                                    <h2 class="uscb-h4 uscb-bold-text" hide-gt-xs>88.9%</h2>
+                                    <span class="uscb-light-text uscb-body-text-small">&nbsp;+/- 3.0%</span>
+                                </div>
+                                <h1 class="uscb-body-text uscb-bold-text ">High school graduate or higher</h1>
+                                <p class="uscb-body-text uscb-padding-BTM-15 uscb-padding-TOP-15" hide-xs> <span class="uscb-bold-text">82.1% </span>high school graduate or higher in the united states</p>
+                                <p class="uscb-body-text-small uscb-padding-BTM-15" hide-gt-xs> <span class="uscb-bold-text">82.1% </span>high school graduate or higher in the united states</p>
+                                <p hide-xs class="uscb-light-text uscb-body-text-small">Source: <a class="uscb-primary-link">Table DP02_0066PE, 2015 American Community Survey 1-year</a></p>
+                            </header>
+                            <figure flex="65" flex-offset="5" flex-xs="100" flex-offset-xs="0" class="uscb-reset-margin ">
+                                <div layout="row">
+                                    <figcaption class="uscb-light-text uscb-center-align uscb-padding-BTM-15" hide-xs>Educational Attainment in Virginia by Sex and Degree</figcaption>
+                                    <figcaption class="uscb-body-text-small uscb-light-text uscb-center-align uscb-padding-BTM-15" hide-gt-xs flex="100">Educational Attainment in Virginia by Sex and Degree</figcaption>
+                                </div>
+                                <img class="uscb-viz-container" src="app/images/placeholder.png" alt="">
+
+                                <div layout-align="space-between center" layout="row">
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2008</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2009</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2010</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2011</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2012</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2013</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2014</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2015</p>
+                                </div>
+                                <p class="uscb-center-align">year</p>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                                <div layout="row" layout-sm="column" layout-xs="column" layout-align-gt-xs="space-between center" >
+                                    <md-switch ng-model="" aria-label="Margin of Error"><span class="uscb-body-text-small" hide-gt-xs>Margin of Error</span> <span class="uscb-body-text" hide-xs>Margin of Error</span> </md-switch>
+                                    <p hide-gt-xs class="uscb-light-text uscb-body-text-small uscb-padding-BTM-15">Source: <a class="uscb-link-color">Table DP02_0066PE, 2015 American Community Survey 1-year</a></p>
+                                    
+                                    <div layout="row" >
+                                        <div flex="100" layout-xs="row" layout-align-xs="space-between center">
+                                            <md-button class="uscb-primary-button" flex-xs="45">Share/Export</md-button>
+                                            <md-button class="uscb-primary-button" flex-xs="45">Customize Chart</md-button>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                            </figure>
+                        </div>
+                        <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <hr class="uscb-hr-1 " hide-xs>
+                    </article>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    
+                    <!--Visualization 2-->
+                    <article class="uscb-padding-LR-10-5 uscb-content-container">
+                        <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <div layout-xs="column" layout="row" layout-align="space-between start">
+                            <header flex="30" flex-xs="100">
+                                <div layout="row">
+                                    <a class="uscb-primary-link" ng-href="" target="_blank" hide-xs>Health</a>
+                                    <a class="uscb-primary-link uscb-body-text-small" ng-href="" target="_blank" hide-gt-xs>Health</a>
+                                </div>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                                <div layout="row" layout-align="start end">
+                                    <h2 class="uscb-h1 uscb-bold-text" hide-xs>9.1%</h2>
+                                    <h2 class="uscb-h4 uscb-bold-text" hide-gt-xs>9.1%</h2>
+                                    <span class="uscb-light-text uscb-body-text-small">&nbsp;+/- 2.0%</span>
+                                </div>
+                                <h1 class="uscb-body-text uscb-bold-text">Uninsured, under age 65</h1>
+                                <p class="uscb-body-text uscb-padding-BTM-15 uscb-padding-TOP-15" hide-xs> <span class="uscb-bold-text">9.9% </span>high school graduate or higher in the united states</p>
+                                <p class="uscb-body-text-small uscb-padding-BTM-15" hide-gt-xs> <span class="uscb-bold-text">9.9% </span>high school graduate or higher in the united states</p>
+                                <p hide-xs class="uscb-light-text uscb-body-text-small">Source: <a class="uscb-link-color">2008-2015 American Community survey 1-year</a></p>
+                            </header>
+                            <figure flex="65" flex-offset="5" flex-xs="100" flex-offset-xs="0" class="uscb-reset-margin ">
+                                <div layout="row">
+                                    <figcaption class="uscb-light-text uscb-center-align uscb-padding-BTM-15" hide-xs>Uninsured Rate in Virginia, 2008-2015</figcaption>
+                                    <figcaption class="uscb-body-text-small uscb-light-text uscb-center-align uscb-padding-BTM-15" flex="100" hide-gt-xs>Uninsured Rate in Virginia, 2008-2015</figcaption>
+                                </div>
+                                <img class="uscb-viz-container" src="app/images/placeholder.png" alt="">
+
+                                <div layout-align="space-between center" layout="row">
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2008</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2009</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2010</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2011</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2012</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2013</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2014</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align">2015</p>
+                                </div>
+                                <p class="uscb-center-align">year</p>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                                <div layout="row" layout-sm="column" layout-xs="column" layout-align-gt-xs="space-between center">
+                                    <md-switch ng-model="" aria-label="Margin of Error"><span class="uscb-body-text-small" hide-gt-xs>Margin of Error</span> <span class="uscb-body-text" hide-xs>Margin of Error</span> </md-switch>
+                                    <p hide-gt-xs class="uscb-light-text uscb-body-text-small uscb-padding-BTM-15">Source: <a class="uscb-link-color">Table DP02_0066PE, 2015 American Community Survey 1-year</a></p>
+                                    <div layout="row" >
+                                        <div flex="100" layout-xs="row" layout-align-xs="space-between center">
+                                            <md-button class="uscb-primary-button" flex-xs="45">Share/Export</md-button>
+                                            <md-button class="uscb-primary-button" flex-xs="45">Customize Chart</md-button>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                            </figure>
+                        </div>
+                        <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <hr class="uscb-hr-1 " hide-xs>
+                    </article>
+                    
+
+                </section>
+                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                <section class="uscb-content-container uscb-padding-LR-10-5" layout-align="start center" >
+                    <div layout="row" class="uscb-padding-TOP-60" hide-xs></div>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    <h2 class="uscb-h2 uscb-text-color-gray uscb-padding-BTM-30" hide-xs>Explore More</h2>
+                    <h2 class="uscb-h3" hide-gt-xs>Explore More</h2>
+                    <hr class="uscb-hr-2 uscb-padding-0" hide-xs>
+                    <div layout="row" class="uscb-padding-TOP-60" hide-xs></div>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    <div>
+                        <div class="uscb-layout-title-bar uscb-padding-LR-5 uscb-padding-TOP-15 uscb-padding-BTM-15">
+                            <h4 class="uscb-h4" hide-xs>Related Searches</h4>
+                            <h4 class="uscb-h5 uscb-bold-text" hide-gt-xs>Related Searches</h4>
+                        </div>
+                        <div class="uscb-relatedSearch-link-container uscb-padding-LR-5 uscb-padding-TOP-30 uscb-padding-BTM-15">
+                            <a class="uscb-primary-link uscb-relatedSearch-inline-47 uscb-padding-BTM-15" ng-href="" target="_blank" ng-repeat="item in vm.listOfLinks">{{item.text}} <span class="uscb-bold-text">{{item.link}}</span></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Footer-->
+                <section class="uscb-content-container" >
+                    <div layout="row" class="uscb-padding-TOP-60" hide-xs></div>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    <div layout="row" layout-align="center start">
+                        <footer class="uscb-footer" layout="row" layout-align="center center" flex="100">
+                            <div>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Accessibility">Accessibility</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Information Quality">Information Quality</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="FOIA">FOIA</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Data Protection and Privacy Policy">Data Protection and Privacy Policy</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="U.S. Department of Commerce">U.S. Department of Commerce</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="Release Notes">Release Notes</md-button>
+                                <span>&vert;</span>
+                                <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="#" title="FAQs">FAQs</md-button>
+                            </div>
+
+                        </footer>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </md-content>
+</section>

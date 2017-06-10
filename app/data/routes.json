@@ -1,0 +1,37 @@
+[ [{"name": "Colors", "route": "home.colors"},
+    {"name": "Icons", "route": "home.icon"},
+    {"name": "Typography", "route": "home.typography"},
+    {"name": "Layout", "route": "home.layout"}],
+    [
+      {"name": "Checkbox", "route": "home.checkbox"},
+      {"name": "Buttons", "route": "home.buttons"},
+      {"name": "Tabs", "route": "home.tabs"},
+      {"name": "Forms and Input", "route":"home.forms"},
+      {"name":"Accordion", "route" : "home.accordion"},
+      {"name": "Header", "route": "home.header"},
+      {"name": "Footer", "route": "home.footer"},
+      {"name": "Tooltips", "route":"home.tooltips"},
+      {"name": "List Items", "route": "home.listitems"},
+      {"name": "Chips", "route":"home.chips"},
+      {"name": "Toasts", "route":"home.toasts"},
+      {"name": "Progress Indicator", "route":"home.progress"},
+      {"name": "Pagination", "route":"home.pagination"},
+      {"name": "Banner", "route": "home.displayBanner"}
+    ] ,
+     [
+      {"name": "Search", "route": "home.search"},
+      {"name": "Custom Search", "route": "home.customsearch"},
+      {"name": "Featured Results", "route": "home.quickfacts"},
+      {"name": "Related search", "route": "home.relatedsearch"},
+      {"name": "Cards", "route": "home.cards"},
+      {"name": "Learn More", "route": "home.learnmore"},
+      {"name": "Disambiguation", "route": "home.disambiguation"}
+    ] ,
+    [
+      {"name": "Landing Page", "route": "landing"},
+      {"name": "All Results", "route": "allresults"},
+      {"name": "Table Results", "route": "tableResults"},
+       {"name": "Geo Profile", "route": "geoprofile"},
+      {"name": "Map Results", "route": "mapResults"}
+    ]
+]

@@ -1,0 +1,92 @@
+.uscb-chips {
+    .md-chips {
+        box-shadow: none;   
+    }
+    
+    md-chip {
+        border: 1px solid;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: bold;
+        background-color: $uscb-light-gray;
+        height: 24px;
+        line-height: 24px;
+        
+        .uscb-primary-link {
+            min-width: 0;
+            min-height: 0;
+            line-height: 0;
+            margin: 0;
+            padding: 0;
+            margin-left: 5px;
+        }
+    }
+}
+
+.uscb-chips-badge {
+    min-width: 242px;
+    padding: 3px 7px;
+    font-size: 14px;
+    line-height: 1;
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: $uscb-light-gray;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 5px;
+    border: 1px solid #000;
+    z-index: 100;
+
+    .uscb-chips-badgeHeader {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    .uscb-chips-badge-expandedView{
+        width: 100%;
+        margin-right: 5px;
+        margin-top: 4px;
+        display: inline-block;
+        padding-top: 5px;
+    }
+
+    .uscb-chips-badge-expandedView > div{
+        margin-top: 5px;
+    }
+
+}
+
+.uscb-chips-span{
+    margin-right: 5px;
+    margin-top: 4px;
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: $uscb-light-gray;
+    border-radius: 6px;
+    border: 1px solid #000;
+    vertical-align: top;
+    color: #000;
+}
+
+.uscb-chips-filterBubbleContainer {
+    position: relative;
+    // height: 33px;
+    height: 41px;
+    border-bottom: 1px solid $uscb-light-gray;
+    padding: 4px 0 4px 10px;
+}
+
+.uscb-chips-clearAll-wrapper {
+    min-width: 70px;
+}
+.uscb-chips-wrapper{
+    max-width: 880px;
+    padding-left: 10px;
+
+    a{
+        text-decoration: none;
+    }
+}

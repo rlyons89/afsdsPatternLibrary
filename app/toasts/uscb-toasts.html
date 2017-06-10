@@ -1,0 +1,41 @@
+<display-wrapper title="Toasts">
+  <uscb-description>
+        <h4>Description</h4>  
+        <h5>Purpose</h5>
+        <p>Toasts provide feedback about an action taken by the user on the current page. </p>
+        <h5>Usage</h5>
+        <p>Toasts appear  when a certain action has been taken by the user to provide feedback. Toasts appear in the top right corner of the screen and disappear after 4 seconds. In CEDSCI, toasts are used on the Map page.</p>
+        <h5>Do</h5>
+        <ul>
+            <li>Keep the length of the message short</li>
+            <li>Keep the placement toasts on the top right of the page</li>
+        </ul>
+        <h5>Do not</h5>
+        <ul>
+            <li>Change the placement of toasts on the page</li>
+            <li>Allow the user to exit out of toasts</li>
+        </ul>
+  </uscb-description>
+  <uscb-code>
+    <h4>Code</h4> 
+      <md-tabs >
+            <md-tab label="Html">
+                <md-content>
+                  <xmp>
+                      
+                  </xmp>
+                    
+                </md-content>
+            </md-tab>
+            <md-tab label="JS"></md-tab>
+        </md-tabs>
+    
+  </uscb-code>
+  <uscb-demo ng-controller="toastsCtrl">
+    <h4>Example</h4>
+        <md-button class="uscb-error-button" ng-click="vm.showErrorToast()">Error Toast</md-button>  
+        <md-button class="uscb-warn-button" ng-click="vm.showWarnToast()">Warning Toast</md-button>
+        <md-button class="uscb-success-button" ng-click="vm.showSuccessToast()">Success Toast</md-button>
+        <md-button class="uscb-info-button" ng-click="vm.showInfoToast()">Info Toast</md-button>
+  </uscb-demo>
+</display-wrapper>

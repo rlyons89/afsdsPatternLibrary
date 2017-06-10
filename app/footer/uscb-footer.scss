@@ -1,0 +1,33 @@
+.uscb-footer {
+    background-color: $uscb-primary-blue;
+    text-align: center;
+    color: $uscb-white;
+    min-height: 70px;
+
+    .uscb-secondary-link-footer {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: capitalize;
+        
+        @media(max-width: 960px){
+            min-height: 16px;
+            line-height: 16px;
+            font-size: 13px;
+            display: inline-block;
+            margin: 6px 0px;
+        }
+    }
+}
+
+.uscb-footer-sidenav {
+    
+    .uscb-secondary-link-footer {
+        font-size: 13px;
+        line-height: 20px;
+        min-height: 20px;
+        
+        @media(max-width: 960px){
+            
+        }
+    }
+}

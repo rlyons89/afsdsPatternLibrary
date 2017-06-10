@@ -1,0 +1,66 @@
+<display-wrapper title="Header">
+  <uscb-description>
+      <h4>Description</h4>  
+        <h5>Purpose</h5>
+        <p>Headers are regions at the top of any page that can be used to establish branding and context for the rest of the page. </p>
+        <h5>Usage</h5>
+        <p>Headers are situated at the very top of the browser viewport. It communicate the any brand association through the color and Census Bureau logo. It also includes a link that allows the user to submit feedback (email hyperlink). The header is persistent across every page in the platform.</p>
+        <h5>Do</h5>
+        <ul>
+            <li>Include client logo</li>
+            <li>Use consistent color and size across entire experience.</li>
+        </ul>
+        <h5>Do not</h5>
+        <ul>
+            <li>N/A</li>
+        </ul>
+  </uscb-description>
+    <uscb-code>
+    <h4>Code</h4> 
+        <md-tabs >
+            <md-tab label="Html">
+                <md-content>
+                  <xmp>
+                      <header class="uscb-header">
+                          <md-toolbar>
+                            <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                                <a href="#" title="data.census.gov">
+                                    <img src="app/images/census-logo-white.svg" class="uscb-logo" />
+                                </a>
+                                <span flex></span>
+                                <div class="uscb-header-search-wrapper" layout="flex"  > 
+                                     <md-button flex-xs="30" flex="10" class="uscb-secondary-link"> <i class="fa fa-search" aria-hidden="true" ></i>  </md-button>
+                                    <input type="text" name="" value="" flex-xs="70" flex="90" placeholder="Employment in michigan" >    
+                                </div>
+                            </div>
+                          </md-toolbar>
+                      </header>
+                  </xmp>
+                    
+                </md-content>
+            </md-tab>
+            <md-tab label="JS"></md-tab>
+        </md-tabs>
+    
+  </uscb-code>
+  <uscb-demo >
+      <h4>Example</h4>
+      <header class="uscb-header">
+          <md-toolbar>
+            <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                <a href="#" title="data.census.gov" flex-xs="25">
+                    <img src="app/images/census-logo-white.svg" class="uscb-logo" />
+                </a>
+                <span flex></span>
+                <div class="uscb-header-search-wrapper" layout="row" flex="30" flex-sm="50" flex-xs="70"  > 
+                    <md-button flex-xs="25" flex-sm="10" flex="10" class="uscb-secondary-link"> <i class="fa fa-search" aria-hidden="true" ></i>  </md-button>
+                    <input type="text" name="" value="" flex-xs="75" flex-sm="90" flex="90" placeholder="Employment in michigan" >    
+                </div>
+            </div>
+          </md-toolbar>
+      </header>
+      
+      
+    
+  </uscb-demo>
+</display-wrapper>

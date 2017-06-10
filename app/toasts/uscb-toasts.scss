@@ -1,0 +1,64 @@
+md-toast.md-default-theme {
+    .md-toast-content {
+        background-color: $uscb-warning-background;
+        color: $uscb-black;
+    }
+}
+
+.uscb-warn-toast {
+    .md-toast-content{
+        background-color: $uscb-warning-background;
+    }
+
+    .md-toast-text{
+        color: $uscb-warning-text;
+    }
+
+    .fa.fa-exclamation-triangle{
+        color: $uscb-warning-text;
+    }
+}
+
+.uscb-error-toast{
+    .md-toast-content{
+        background-color: $uscb-error-background; 
+    }
+
+    .md-toast-text{
+        color: $uscb-error-text;
+    }
+
+    .fa.fa-ban{
+        color: $uscb-error-text;
+    }
+}
+
+.uscb-success-toast {
+
+     .md-toast-content{
+        background-color: $uscb-success-background; 
+    }
+
+    .md-toast-text{
+        color: $uscb-success-text;
+    }
+
+    .fa.fa-check{
+        color: $uscb-success-text;
+    }
+}
+
+.uscb-info-toast{
+    
+    .md-toast-content{
+        background-color: $uscb-info-background; 
+    }
+
+    .md-toast-text{
+        color: $uscb-info-text;
+    }
+
+    .fa.fa-info-circle{
+        color: $uscb-info-text;
+    }
+}

@@ -1,0 +1,133 @@
+@import './uscb-colors.scss';
+@import './app/layout/uscb-layout.scss';
+@import './app/buttons/uscb.button.scss';
+@import './app/colors/color-helper-component/color-helper.scss';
+@import './app/GridList/uscb-gridlist.scss';
+@import './app/checkbox/uscb-checkbox.scss';
+@import './app/forms-input/uscb-form-input.scss';
+@import './app/header/uscb-header.scss';
+@import './app/footer/uscb-footer.scss';
+@import './app/accordion/uscb-accordion.scss';
+@import './app/tooltips/uscb-tooltips.scss';
+@import './app/typography/uscb-typography.scss';
+@import './app/list-items/uscb-list-items.scss';
+@import './app/chips/uscb-chips.scss';
+@import './app/toasts/uscb-toasts.scss';
+@import './app/tabs/uscb-tabs.scss';
+@import './app/progress/uscb-progress.scss';
+@import './app/pagination/uscb-pagination.scss';
+@import './app/webpages/webpages.scss';
+@import './app/Search/uscb-search-pattern.scss';
+@import './app/filterbasket/uscb-filter-basket.scss';
+@import './app/Thematic-map/thematicmap.scss';
+@import './app/Selection-Map/selectionmapp.scss';
+@import './app/table-preview/uscb-table-preview.scss';
+@import './app/infopanel/infopanel.scss';
+@import './app/aff-table/aff-table.scss';
+@import './app/single-search/uscb-single-search.scss';
+@import './app/display-banner/uscb-display-banner.scss';
+@import './app/quick-stats/quick-stats.scss';
+@import './app/related-search/related-search.scss';
+@import './app/learn-more/uscb-learn-more.scss';
+@import './app/cards/uscb-cards.scss';
+@import './app/icons/uscb-icons.scss';
+@import './app/disambiguation-section/disambiguation.comp.scss';
+
+
+
+md-toolbar:not(.md-menu-toolbar) {
+  &.uscb-toolbar-theme{
+    background-color: $uscb-primary-blue;
+    padding: 0 10px;
+      
+      h3 {
+          cursor: pointer;
+      }
+  }
+
+  &.uscb-toolbar-gray{
+    background-color: whitesmoke;
+    color: black;
+  }
+}
+
+.uscb-list-item-nav {
+    min-height: 0;
+    
+    &:before {
+        min-height: 0;
+    }
+}
+  
+.demo-container {
+  width: 900px;
+  border: 1px solid rgba(0,0,0,.03);
+  box-shadow: 0 2px 2px rgba(0,0,0,.24),0 0 2px rgba(0,0,0,.12);
+  margin-top: 40px;
+}
+
+.wrapper-box{
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12)
+}
+.code-wrapper{
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+//Button styles
+.mt-code {
+  padding: 5px 0 5px 30px;
+  border-bottom: 1px solid rgba(0,0,0,.03);
+}
+.mt-demo {
+  padding: 30px;
+}
+
+md-tab-content {
+    padding: 10px;
+}
+.displayNone{
+  display: none;
+}
+.displayNone{
+  display: none;
+}
+.uscb-pull-right{
+  position:absolute;
+  right: -1px;
+}
+
+.uscb-pull-right-icon{
+  position: absolute;
+  font-size: 30px;
+  right: 10px;
+  top:3px;
+}
+.uscb-no-hover{
+  font-style: italic;
+  cursor: no-drop;
+  color:rgba(0,0,0,0.38);
+  &:hover{
+    background-color: #E5E5E5;
+    color:rgba(0,0,0,0.38);
+    cursor: no-drop
+  }
+}
+
+md-checkbox[disabled].uscb-primary-checkbox{
+  cursor: no-drop;
+}
+.uscb-z-index-5 {
+  z-index: 5;
+}
+
+.uscb-example-page-container {
+    border: 2px solid $uscb-dark-gray;
+    margin: 10px;
+    
+     @media(max-width: 599px){
+        border: none;
+        margin: 0;    
+    }
+}

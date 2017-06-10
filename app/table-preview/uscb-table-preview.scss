@@ -1,0 +1,113 @@
+.uscb-table-showErorPadding{
+    padding: 1em;
+}
+
+.uscb-table-err-msg-text-align{
+    text-align: center;
+}
+
+.uscb-table-errorMsg-text{
+    font-weight: bold;
+    color: red;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.uscb-tables-separator{
+    margin-bottom: 10px;
+    @media (max-width: 960px){
+        border-bottom: 1px solid $uscb-light-gray;
+    }
+}
+
+.uscb-table-footer-controls{
+    background: white;
+    border: 1px solid #aaa;
+    border-bottom: none;
+    border-top: none;
+    padding: 10px;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableViewPort{
+    overflow-x: auto;
+    border: 1px solid rgba(153, 153, 153, 1);
+    border-top: none;
+    background-color: white;
+}
+
+.tableViewDiv label span {
+  color: #666;
+  font-family: 'Arial Bold', 'Arial';
+  font-weight: 700;
+  font-size: 14px;
+  
+}
+
+  .table-view-label-cont label, .table-view-label-cont span {
+    margin-bottom: 0;
+    font-weight: normal;
+    color: #666666;
+    font-size: 13px;
+  }
+
+.table-view-label-cont span:first-child {
+    font-weight: bold;    
+}
+
+/* LEGACY CSS FILES TO BE REMOVED */
+
+.tableFilter{
+    margin: 5px
+}
+
+.tableFilter #tableFilterTitle{
+    padding: 10px 0;
+    color: #112e51;font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tableFilter .tableFilterCategory{
+    margin-right: 0px;
+}
+
+.tableFilter .tableFilterCategory .tableFilterCategoryTitle{
+    background-color: #235b7f;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.tableFilter .tableFilterCategory .tableFilterCategoryTitle .tableFilterArrow {
+    font-size: 24px
+}
+
+.tableFilter .tableFilterCategory .tableFilterOptions{
+    color: rgb(35, 91, 127);
+    padding-bottom: 7px;
+    font-weight: normal;
+    background-color: rgb(201, 201, 201);
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 10px;
+    border-bottom: 1px solid #bababa;
+    margin-bottom: 1px;
+}
+
+.tableFilter .tableFilterCategory .tableFilterOptions label{
+    cursor: pointer;
+    color: #112e51;
+    font-weight: normal;
+}
+
+.tableFilter .tableFilterCategory .tableFilterOptions input{
+    cursor: pointer;
+}

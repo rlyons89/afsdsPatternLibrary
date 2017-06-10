@@ -1,0 +1,291 @@
+<div ng-controller="landingCtrl" layout="column" flex layout-fill ng-cloak>
+    <div class="uscb-content-wrapper">
+        <div class="uscb-header-application">
+            <md-toolbar md-scroll-shrink> 
+                <div layout="row" class="uscb-padding-TOP-15"></div>
+                <div layout-gt-xs="row" layout-xs="column">
+                    <div class="md-toolbar-tools uscb-padding-LR-5" flex>
+                        <p class="uscb-body-text uscb-light-text" hide-xs>This is a preview of the Census Bureau's new data exploration platform. The data presented here are test data and should not be used for purposes beyond evaluating the functionality of the platform. For official Census data, please continue to use our data resources at census.gov/data.html.</p>
+                        <p class="uscb-body-text-small uscb-light-text" hide-gt-xs>This is a preview of the Census Bureau's new data exploration platform. The data presented here are test data and should not be used for purposes beyond evaluating the functionality of the platform. For official Census data, please continue to use our data resources at census.gov/data.html.</p>
+                    </div>
+                    <hr class="uscb-hr-1 uscb-padding-0" hide-xs>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    <div layout="row" layout-align="center center" flex-gt-xs="5" hide-xs>
+                        <md-button class="" hide-xs flex><i class="fa fa-close fa-2x"></i></md-button>
+                    </div>
+                    <div class="uscb-padding-LR-5" layout="row" layout-align="center center" hide-gt-xs>
+                        <md-button class="uscb-primary-button uscb-bold-text" flex="100" hide-gt-xs>Dismiss</md-button>
+                    </div>
+                </div>
+                <div layout="row" class="uscb-padding-TOP-15"></div>
+            </md-toolbar>
+        </div>
+        <header class="uscb-header uscb-header-mobile" >
+            <md-toolbar md-scroll-shrink>
+                <div class="md-toolbar-tools" layout="row" layout-align="center center"> <a href="https://www.census.gov/" title="data.census.gov"> <img src="app/images/census-logo-white.svg" class="uscb-logo" /> </a>                            <span flex></span>
+
+                </div>
+            </md-toolbar>
+        </header>
+        <div class="uscb-header-fixed-container" du-spy-context>
+            <header class="uscb-header uscb-header-mobile uscb-header-fixed-scroll" du-scrollspy="outsideOfBannerSections" offset="100">
+                <md-toolbar md-scroll-shrink>
+                    <div class="md-toolbar-tools" layout="row" layout-align="center center"> <a href="https://www.census.gov/" title="data.census.gov"> <img src="app/images/census-logo-white.svg" class="uscb-logo" /> </a>                            <span flex></span>
+                        <div class="uscb-header-search-wrapper" layout="row" flex="40" flex-xs="70" flex-sm="70">
+                            <md-input-container layout="row" flex>
+                                <label></label>
+                                <input class="uscb-input-large uscb-input-header" type="text" name="" value=""
+                                 placeholder="&nbsp;I'm looking for&nbsp;...">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </md-input-container>
+                        </div>
+                    </div>
+                </md-toolbar>
+            </header>
+        </div>
+        <section class="uscb-content-container-banner uscb-content-container-VH-100" id="banner">
+            <div layout-gt-xs="row" layout-fill>
+                <div class="uscb-padding-LR-5" flex="50" flex-xs="100" layout="column" layout-align="center center">
+                    <div layout="column" layout-align="center left">
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <h1 class="uscb-h1 uscb-bold-text uscb-text-color-blue" hide-xs>Explore Census Data</h1>
+                        <h1 class="uscb-h3 uscb-center-align uscb-bold-text uscb-text-color-blue" hide-gt-xs>Explore Census Data</h1>
+                        <div layout="row" class="uscb-padding-TOP-15" ></div>
+                        <h2 class="uscb-h4 uscb-light-text" hide-xs>The Census Bureau serves as the leading source of quality data about the nation's people and economy.</h2>
+                        <h2 class="uscb-body-text-small uscb-center-align" hide-gt-xs>The Census Bureau serves as the leading source of quality data about the nation's people and economy.</h2>
+                        <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <md-input-container layout="row" >
+                            <label></label>
+                            <input class="uscb-input-large" type="text" placeholder="&nbsp;I'm looking for&nbsp;..." flex="100" md-autofocus ng-model="vm.searchTerm">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </md-input-container>
+                        <div layout="row" class="uscb-padding-TOP-15"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="outsideOfBannerSections">
+            <section class="uscb-content-container uscb-content-container-VH-100-lg" >
+                <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                <div class="uscb-padding-LR-5-0" layout-gt-xs="row" layout-fill>
+                    <div  flex="50" flex-xs="100" layout="column" layout-align="center center" hide-xs>
+                        <div class="uscb-card-landing" flex="80">Example 1</div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    </div>
+                    <div class="uscb-padding-LR-5" flex="50" flex-xs="100" layout="column" layout-align="center center" hide-gt-xs>
+                        <div class="uscb-card-landing" flex="80">Example 1</div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    </div>
+                    <div class="uscb-padding-LR-5" flex="50" flex-xs="100" layout="column" layout-align="center center">
+                        <div class="uscb-card-landing" flex="35">Example 1</div>
+                        <div layout="row" class="uscb-padding-TOP-45" hide-xs ></div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                        <div class="uscb-card-landing" flex="35">Example 2</div>
+                        <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs></div>
+                    </div>
+                </div>
+            </section>
+            <section class="uscb-content-container uscb-content-container-VH-100-lg uscb-padding-LR-10-5">
+                <hr class="uscb-hr-1 uscb-padding-0" hide-xs>
+                <div layout-fill layout-gt-xs="column" layout-align-gt-xs="center center" >
+                    <h1 class="uscb-h1 uscb-light-text" hide-xs>Get data from one reliable source</h1>
+                    <div layout="row" hide-gt-xs layout-align-xs="center center">
+                        <h1 class="uscb-h2 uscb-light-text uscb-center-align-sm" flex>Get data from one reliable source</h1>
+                    </div>
+                    <div layout="row" class="uscb-padding-TOP-45" hide-xs></div>
+                    <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    <div layout-gt-xs="row" layout-align-gt-xs="space-between start" >
+                        <div layout="row" flex-gt-xs="25" layout-align-xs="center start">
+                            <div flex-xs="80" class="uscb-center-align">
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs></div>
+                                <img src="app/images/icons_Search.svg" class="uscb-icons-platform"/>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <h2 class="uscb-h3">Start with search</h2>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <p class="uscb-light-text">
+                                We're combining our data tools into a single experience. use the search bar to find the informaiton you need.
+                                </p>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                            </div>
+                        </div>
+                        <div layout="row" flex-gt-xs="25" layout-align-xs="center start">
+                            <div flex-xs="80" class="uscb-center-align" >
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs></div>
+                                <img src="app/images/icons_Features.svg" class="uscb-icons-platform" />
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <h2 class="uscb-h3">Try new features</h2>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <p class="uscb-light-text">
+                                We release updates every two months. Explore features that will help you interact with our data.
+                                </p>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                            </div>
+                        </div>
+                        <div layout="row" flex-gt-xs="25" layout-align-xs="center start">
+                            <div flex-xs="80" class="uscb-center-align">
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs></div>
+                                <img src="app/images/icons_Feedback.svg" class="uscb-icons-platform"/>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <h2 class="uscb-h3">Give us feedback</h2>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <p class="uscb-light-text">
+                                We need your help to develop a seamless experience. Tell us how to improve this platform: <a class="uscb-primary-link" href="mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback" title="Submit Feedback">cedsci.feedback@census.gov</a>
+                                </p>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                            </div>
+                        </div>
+                        <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                    </div>
+                </div>
+            </section>
+            <div class="uscb-parallax-container" id="parallax">
+                <div class="uscb-parallax-navigation" du-scrollspy="parallax" du-spy-context>
+                    <a class="uscb-parallax-navigation-indicator" du-scrollspy="geoProfile" offset="500">
+                        <span class="uscb-parallax-navigation-link" du-smooth-scroll="geoProfile" offset="0"></span>
+                    </a>
+                    <a class="uscb-parallax-navigation-indicator" du-smooth-scroll="enhancedMap" du-scrollspy="enhancedMap" >
+                        <span class="uscb-parallax-navigation-link" du-smooth-scroll="enhancedMap" offset="0"></span>
+                    </a>
+                    <a class="uscb-parallax-navigation-indicator" du-smooth-scroll="share" du-scrollspy="share" >
+                        <span class="uscb-parallax-navigation-link" du-smooth-scroll="share" offset="0"></span>
+                    </a>
+                </div>
+                <section class="uscb-content-container uscb-content-container-VH-100" id="geoProfile" du-spy-context du-scrollspy="geoProfile" offset="500">
+                    <div layout-gt-xs="row" layout-fill>
+                        <div flex flex-offset-gt-xs="5" id="geoProfileImage" class="uscb-parallax-image">
+                        </div>
+                        <div class="uscb-padding-LR-5" flex="50" flex-xs="100" flex-offset-xs="0" layout="column" layout-align="center center" layout-fill layout-align-xs="end center">
+                            <div layout="column" layout-align-gt-xs="center left" layout-align-xs="center center">
+                                <h1 class="uscb-h1 uscb-text-color-blue" hide-xs>Discover</h1>
+                                <h1 class="uscb-h3 uscb-text-color-blue" hide-gt-xs>Discover</h1>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                                <h2 class="uscb-h3" hide-xs>Geography profiles</h2>
+                                <h2 class="uscb-h5" hide-gt-xs>Geography profiles</h2>
+                                <div layout="row" class="uscb-padding-TOP-15" ></div>
+                                <div layout="row">
+                                    <p class="uscb-h5 uscb-light-text" flex="60" hide-xs>Easily search any place to learn popular statistics and view related charts and graphs.</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align" flex hide-gt-xs>Easily search any place to learn popular statistics and view related charts and graphs.</p>
+                                </div>
+                                <div layout="row" class="uscb-padding-TOP-15" ></div>
+                                <p class="uscb-h5 uscb-text-color-blue">Coming soon!</p>
+                                <div layout="row" class="uscb-padding-TOP-30" ></div>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs ></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="uscb-content-container uscb-content-container-VH-100" id="enhancedMap" du-spy-context du-scrollspy="enhancedMap" >
+                    <div layout-gt-xs="row" layout-fill>
+                        <div flex flex-offset-gt-xs="5" id="enhancedMapImage" class="uscb-parallax-image">
+                        </div>
+                        <div class="uscb-padding-LR-5" flex="50" flex-xs="100" flex-offset-xs="0" layout="column" layout-align="center center" layout-fill layout-align-xs="end center">
+                            <div layout="column" layout-align-gt-xs="center left" layout-align-xs="center center">
+                                <h1 class="uscb-h1 uscb-text-color-blue" hide-xs>Visualize</h1>
+                                <h1 class="uscb-h3 uscb-text-color-blue" hide-gt-xs>Visualize</h1>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                                <h2 class="uscb-h3" hide-xs>Enhanced mapping and data</h2>
+                                <h2 class="uscb-h5" hide-gt-xs>Enhanced mapping and data</h2>
+                                <div layout="row" class="uscb-padding-TOP-15"></div>
+                                <div layout="row">
+                                    <p class="uscb-h5 uscb-light-text" flex="60" hide-xs>Use visual tools to customize data on an interactive map experience.</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align" flex hide-gt-xs>Use visual tools to customize data on an interactive map experience.</p>
+                                </div>
+                                <div layout="row" class="uscb-padding-TOP-15" ></div>
+                                <p class="uscb-h5 uscb-text-color-blue">Coming soon!</p>
+                                <div layout="row" class="uscb-padding-TOP-30"></div>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs ></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="uscb-content-container uscb-content-container-VH-100" id="share" du-spy-context du-scrollspy="share" >
+                    <div layout-gt-xs="row" layout-fill>
+                        <div flex flex-offset-gt-xs="5" id="shareImage" class="uscb-parallax-image">
+                        </div>
+                        <div class="uscb-padding-LR-5" flex="50" flex-xs="100" flex-offset-xs="0" layout="column" layout-align="center center" layout-fill layout-align-xs="end center">
+                            <div layout="column" layout-align-gt-xs="center left" layout-align-xs="center center" >
+                                <h1 class="uscb-h1 uscb-text-color-blue" hide-xs>Interact</h1>
+                                <h1 class="uscb-h3 uscb-text-color-blue" hide-gt-xs>Interact</h1>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-xs></div>
+                                <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+                                <h2 class="uscb-h3" hide-xs>Information at a glance</h2>
+                                <h2 class="uscb-h5" hide-gt-xs>Information at a glance</h2>
+                                <div layout="row" class="uscb-padding-TOP-15" ></div>
+                                <div layout="row">
+                                    <p class="uscb-h5 uscb-light-text" flex="60" hide-xs>Engage with some of the most valuable data visualizations, and easliy share them across multiple platforms.</p>
+                                    <p class="uscb-body-text-small uscb-light-text uscb-center-align" flex hide-gt-xs>Engage with some of the most valuable data visualizations, and easliy share them across multiple platforms.</p>
+                                </div>
+                                <div layout="row" class="uscb-padding-TOP-15" ></div>
+                                <p class="uscb-h5 uscb-text-color-blue">Coming soon!</p>
+                                <div layout="row" class="uscb-padding-TOP-30" ></div>
+                                <div layout="row" class="uscb-padding-TOP-30" hide-gt-xs ></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <section class="uscb-content-container uscb-content-container-VH-100-lg uscb-content-container-after-parallax">
+                <div class="uscb-padding-LR-10-5" layout-gt-xs="row" layout-fill hide-xs>
+                    <div flex-gt-xs="30" layout="column" layout-align="center center">
+                        <img src="app/images/person.svg" />
+                    </div>
+                    <div class="uscb-padding-LR-5" flex-gt-xs="70" layout="column" layout-align="center center">
+                        <div layout="column">
+                            <h1 class="uscb-h1 uscb-light-text">Help us build this experience</h1>
+                            <div layout="row" class="uscb-padding-TOP-30" ></div>
+                            <p class="uscb-h5 uscb-light-text">Your input is important as we develop this platform. Start searching and let us know how we can make your experience better.</p>
+                            <div layout="row" class="uscb-padding-TOP-15" ></div>
+                            <p class="uscb-light-text uscb-h5">
+                                Email feedback to: <a class="uscb-primary-link" href="mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback" title="Submit Feedback">cedsci.feedback@census.gov</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uscb-padding-LR-10-5" layout-gt-xs="row" hide-gt-xs>
+                    <div class="uscb-padding-LR-5" flex-gt-xs="70" layout="column" layout-align="center center">
+                        <div >
+                            <div layout="row" class="uscb-padding-TOP-30" ></div>
+                            <h1 class="uscb-h2 uscb-light-text uscb-center-align">Help us build this experience</h1>
+                            <div layout="row" class="uscb-padding-TOP-15"></div>
+                            <p class="uscb-h5 uscb-light-text uscb-center-align">Your input is important as we develop this platform. Start searching and let us know how we can make your experience better.</p>
+                            <div layout="row" class="uscb-padding-TOP-15" ></div>
+                            <p class="uscb-light-text uscb-h5 uscb-center-align">
+                                Email feedback to: <a class="uscb-primary-link" href="mailto:cedsci.feedback@census.gov?Subject=CEDSCI%20Feedback" title="Submit Feedback">cedsci.feedback@census.gov</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div flex-gt-xs="30" layout="column" layout-align="center center">
+                        <img src="app/images/person.svg" />
+                    </div>
+                    <div layout="row" class="uscb-padding-TOP-15" ></div>
+                </div>
+            </section>
+            <section class="uscb-content-container" >
+            <div layout="row" class="uscb-padding-TOP-15" hide-gt-xs></div>
+            <div layout="row" layout-align="center start">
+                <footer class="uscb-footer uscb-padding-LR-5" layout="row" layout-align="center center" flex="100">
+                    <div>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="https://www.census.gov/about/policies/privacy/privacy-policy.html#par_textimage_1" title="Accessibility">Accessibility</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="https://www.census.gov/quality/" title="Information Quality">Information Quality</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="https://www.census.gov/foia/" title="FOIA">FOIA</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="https://www.census.gov/privacy/" title="Data Protection and Privacy Policy">Data Protection and Privacy Policy</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="https://www.commerce.gov/" title="U.S. Department of Commerce">U.S. Department of Commerce</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="./assets/Technology Preview Release Notes.pdf" title="Release Notes" download>Release Notes</md-button>
+                        <span>&vert;</span>
+                        <md-button class="uscb-secondary-link uscb-secondary-link-footer" href="./assets/Data_Census_Gov FAQs 20170315.pdf" download title="FAQs">FAQs</md-button>
+                    </div>
+
+                </footer>
+            </div>
+        </section>
+        </div>
+    </div>
+</div>

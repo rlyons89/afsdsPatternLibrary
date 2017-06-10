@@ -1,0 +1,149 @@
+[
+  {
+    "label": "Total Groups Tallied:!!Melanesian:!!Fijian",
+    "concept": "B02019.  Native Hawaiian and Other Pacific Islander Alone or In Any Combination by Selected Groups",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Tool and die makers",
+    "concept": "B24126.  Detailed Occupation for the Full-Time, Year-Round Civilian Employed Female Population 16 Years and Over",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Male:!!$35,000 to $39,999",
+    "concept": "B20001. Sex by Earnings in the Past 12 Months (in 2015 Inflation-Adjusted Dollars) for the Population 16 Years and Over With Earnings in the Past 12 Months",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Born in the United States",
+    "concept": "B06004HPR.  Place of Birth (White Alone, Not Hispanic or Latino) in Puerto Rico",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Male:!!Other:!!With earnings:!!$50,000 to $54,999",
+    "concept": "B20005E. Sex by Work Experience in the Past 12 Months by Earnings in the Past 12 Months (in 2015 Inflation-Adjusted Dollars) for the Population 16 Years and Over (Native Hawaiian and Other Pacific Islander Alone)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!3 or 4",
+    "concept": "B25032C.  UNITS IN STRUCTURE (AMERICAN INDIAN AND ALASKA NATIVE ALONE HOUSEHOLDER)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Total:",
+    "concept": "B08505A.  MEANS OF TRANSPORTATION TO WORK FOR WORKPLACE GEOGRAPHY (WHITE ALONE)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Female:!!Service occupations:!!Protective service occupations:!!Law enforcement workers including supervisors",
+    "concept": "B24010I.  SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER (HISPANIC OR LATINO)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Total Groups Tallied:!!Melanesian:!!Fijian",
+    "concept": "B02019.  Native Hawaiian and Other Pacific Islander Alone or In Any Combination by Selected Groups",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!In the labor force:!!Employed:!!With a disability:",
+    "concept": "B18120.  Employment Status by Disability Status and Type",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Born in the United States",
+    "concept": "B06004HPR.  Place of Birth (White Alone, Not Hispanic or Latino) in Puerto Rico",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Male:!!Other:!!With earnings:!!$50,000 to $54,999",
+    "concept": "B20005E. Sex by Work Experience in the Past 12 Months by Earnings in the Past 12 Months (in 2015 Inflation-Adjusted Dollars) for the Population 16 Years and Over (Native Hawaiian and Other Pacific Islander Alone)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "3 or 4",
+    "concept": "B25032C.  UNITS IN STRUCTURE (AMERICAN INDIAN AND ALASKA NATIVE ALONE HOUSEHOLDER)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Total:",
+    "concept": "B08505A.  MEANS OF TRANSPORTATION TO WORK FOR WORKPLACE GEOGRAPHY (WHITE ALONE)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Female:!!Service occupations:!!Protective service occupations:!!Law enforcement workers including supervisors",
+    "concept": "B24010I.  SEX BY OCCUPATION FOR THE CIVILIAN EMPLOYED POPULATION 16 YEARS AND OVER (HISPANIC OR LATINO)",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Did not work:!!Male:!!65 years and over:!!No public coverage",
+    "concept": "B27014.  Public Health Insurance by Work Experience by Sex by Age",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Latin America:!!Central America:!!Mexico:!!Entered before 1990:!!Naturalized U.S. citizen",
+    "concept": "B05007. Place of Birth by Year of Entry by Citizenship Status for the Foreign-Born Population",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "In the labor force:!!Employed:!!With a disability:",
+    "concept": "B18120.  Employment Status by Disability Status and Type",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Car, truck, or van - carpooled:!!Speak language other than English:",
+    "concept": "C08513.  MEANS OF TRANSPORTATION TO WORK BY LANGUAGE SPOKEN AT HOME AND ABILITY TO SPEAK ENGLISH FOR WORKPLACE GEOGRAPHY",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Margin of Error for!!Total Groups Tallied:!!Micronesian:!!Other Micronesian",
+    "concept": "B02019.  Native Hawaiian and Other Pacific Islander Alone or In Any Combination by Selected Groups",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  },
+  {
+    "label": "Did not work:!!Male:!!65 years and over:!!No public coverage",
+    "concept": "B27014.  Public Health Insurance by Work Experience by Sex by Age",
+    "predicateType": "int",
+    "category": "tables",
+    "tableID": "B24678"
+  }
+]

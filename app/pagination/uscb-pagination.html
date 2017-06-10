@@ -1,0 +1,70 @@
+<display-wrapper title="Pagination">
+  <uscb-description>
+      <h4>Description</h4>  
+        <h5>Purpose</h5>
+        <p>Pagination shows the user that more information is available, beyond what is shown on the current screen.</p>
+        <h5>Usage</h5>
+        <p> Pagination uses numbers to indicate the user's current position among available pages, and a spatial arrangement of numbers to show further available information. </p>
+        <p> The CEDSCI platform leverages pagination on the results pages, in the event that there are more than 10 results. In the expanded table components, pagination elements are present regardless of the number of rows and columns can fit in the current view; they become active in the event that there are more than 20 rows , while the number of columns depends on the physical width of the content.</p>
+        <h5>Do</h5>
+        <ul>
+            <li>Use numbers to indicate current page numbers.</li>
+            <li>Indicate the total number of pages.</li>
+            <li>Separate page numbers using minimal graphical elements, such as light opacity lines.</li>
+        </ul>
+        <h5>Do not</h5>
+        <ul>
+            <li>Use excessive space to separate page numbers.</li>
+        </ul>
+  </uscb-description>
+    <uscb-code>
+    <h4>Code</h4> 
+        <md-tabs >
+            <md-tab label="Html">
+                <md-content>
+                  <xmp>
+                      <section class="uscb-pagination-container" layout="row" layout-align="center center">
+                        <md-button class="groupX left uscb-primary-link" ng-disabled="true">First</md-button>
+                        <md-button class="groupX middle uscb-primary-link" ng-disabled="true">Previous</md-button>
+                        <md-button class="groupX middle uscb-primary-link">1</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs>2</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs>3</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs>4</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs>5</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>6</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>7</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>8</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>9</md-button>
+                        <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>10</md-button>
+                        <md-button class="groupX middle uscb-primary-link">Next</md-button>
+                        <md-button class="groupX right uscb-primary-link">Last</md-button>
+                    </section>
+                  </xmp>
+                    
+                </md-content>
+            </md-tab>
+            <md-tab label="JS"></md-tab>
+        </md-tabs>
+    
+  </uscb-code>
+  <uscb-demo ng-controller="paginationCtrl">
+        <h4>Example</h4>
+        <section class="uscb-pagination-container" layout="row" layout-align="center center">
+            <md-button class="groupX left uscb-primary-link" ng-disabled="true">First</md-button>
+            <md-button class="groupX middle uscb-primary-link" ng-disabled="true">Previous</md-button>
+            <md-button class="groupX middle uscb-primary-link">1</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs>2</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs>3</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs>4</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs>5</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>6</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>7</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>8</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>9</md-button>
+            <md-button class="groupX middle uscb-primary-link" hide-xs hide-sm>10</md-button>
+            <md-button class="groupX middle uscb-primary-link">Next</md-button>
+            <md-button class="groupX right uscb-primary-link">Last</md-button>
+        </section>
+
+  </uscb-demo>
+</display-wrapper>
